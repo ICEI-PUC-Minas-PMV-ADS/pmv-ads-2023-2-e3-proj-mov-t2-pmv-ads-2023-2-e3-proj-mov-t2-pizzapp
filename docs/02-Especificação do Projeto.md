@@ -82,13 +82,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-001| Permitir que o cliente crie um pedido | ALTA | 
 |RF-002| Permitir que o cliente visualize o cardápio | ALTA | 
 |RF-003| Permitir que o cliente busque os itens dos cardápio | MÉDIA | 
-|RF-004| Permitir que o funcionario faça login  | ALTA | 
-|RF-005| Permitir que o funcionario adicione um item no cardápio  | ALTA | 
-|RF-006| Permitir que o funcionario altere o status de um item no cardápio  | MÉDIA | 
-|RF-007| Permitir que o funcionario altere o valor de um item no cardápio  | MÉDIA | 
-|RF-008| Permitir que o funcionario visualize os pedidos  | ALTA | 
-|RF-009| Permitir que o funcionario filtre os pedidos por status   | MÉDIA | 
-|RF-010| Permitir que o funcionario altere o status dos pedidos  | ALTA | 
+|RF-004| Permitir que o cliente visualize o status do pedido | BAIXA | 
+|RF-005| Permitir que o funcionario faça login  | ALTA | 
+|RF-006| Permitir que o funcionario adicione um item no cardápio  | ALTA | 
+|RF-007| Permitir que o funcionario altere o status de um item no cardápio  | MÉDIA | 
+|RF-008| Permitir que o funcionario altere o valor de um item no cardápio  | MÉDIA | 
+|RF-009| Permitir que o funcionario visualize os pedidos  | ALTA | 
+|RF-010| Permitir que o funcionario filtre os pedidos por status   | MÉDIA | 
+|RF-011| Permitir que o funcionario altere o status dos pedidos  | ALTA | 
 
 
 ### Requisitos não Funcionais
