@@ -13,9 +13,13 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 ![Ana Santos](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp/assets/106103247/75a088b8-cc91-47f7-b973-8c151580d8dd)
 
 Nome: Ana Santos
+
 Idade: 28 anos
+
 Área de Ocupação: Garçonete
+
 Gostos: Gosta de eficiência e organização. Aprecia aplicativos intuitivos que facilitem a tomada de pedidos e a comunicação com a cozinha. Gosta de ter todas as informações dos pratos, ingredientes e promoções facilmente acessíveis.
+
 Frustrações: Fica frustrada quando um aplicativo é lento ou difícil de navegar. Também se incomoda com falta de clareza nas descrições dos pratos e com problemas de comunicação que levam a erros nos pedidos.
 
 ### Persona 2
