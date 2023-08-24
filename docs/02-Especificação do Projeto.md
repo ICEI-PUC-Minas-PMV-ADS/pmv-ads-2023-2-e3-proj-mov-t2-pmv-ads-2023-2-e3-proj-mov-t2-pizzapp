@@ -26,21 +26,29 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ![Chefe João Silva](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp/assets/106103247/8afe9795-c007-42a0-8efc-01cdde4847c6)
 
-Nome: João Silva
-Idade: 35 anos
-Área de Ocupação: Chef de Cozinha
-Gostos: Valoriza a precisão e rapidez na comunicação dos pedidos. Gosta de aplicativos que permitam personalizar os pedidos de acordo com as preferências dos clientes. Aprecia ferramentas que auxiliem no controle de estoque e reabastecimento de ingredientes.
-Frustrações: Fica frustrado quando os pedidos não chegam de maneira clara e completa. Também se incomoda com aplicativos que não atualizam o estoque corretamente, levando a problemas de disponibilidade de ingredientes.
+- Nome: João Silva
+  
+- Idade: 35 anos
+  
+- Área de Ocupação: Chef de Cozinha
+  
+- Gostos: Valoriza a precisão e rapidez na comunicação dos pedidos. Gosta de aplicativos que permitam personalizar os pedidos de acordo com as preferências dos clientes. Aprecia ferramentas que auxiliem no controle de estoque e reabastecimento de ingredientes.
+  
+- Frustrações: Fica frustrado quando os pedidos não chegam de maneira clara e completa. Também se incomoda com aplicativos que não atualizam o estoque corretamente, levando a problemas de disponibilidade de ingredientes.
 
 ### Persona 3
 
 ![Rafael Lima](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp/assets/106103247/60cbcabc-9df3-44cd-a4e8-8beabe928ee3)
 
-Nome: Rafael Lima
-Idade: 28 anos
-Área de Ocupação: Cozinheiro
-Gostos: Rafael é um especialista em pizzas apaixonado por oferecer aos clientes experiências excepcionais de degustação. Ele gosta de estudar a fundo as características das pizzas e harmonizá-las com diferentes pratos. Fora do trabalho, gosta de visitar outras pizzarias e expandir seu conhecimento sobre elas.
-Frustrações com Apps para Restaurante: Rafael fica frustrado quando os aplicativos de menu da pizzaria não é atualizado com frequência. Ele quer ter acesso a uma lista de pizzas bem organizada, com informações detalhadas sobre cada pizza.
+- Nome: Rafael Lima
+
+- Idade: 28 anos
+
+- Área de Ocupação: Cozinheiro
+
+- Gostos: Rafael é um especialista em pizzas apaixonado por oferecer aos clientes experiências excepcionais de degustação. Ele gosta de estudar a fundo as características das pizzas e harmonizá-las com diferentes pratos. Fora do trabalho, gosta de visitar outras pizzarias e expandir seu conhecimento sobre elas.
+
+- Frustrações com Apps para Restaurante: Rafael fica frustrado quando os aplicativos de menu da pizzaria não é atualizado com frequência. Ele quer ter acesso a uma lista de pizzas bem organizada, com informações detalhadas sobre cada pizza.
 
 > **Links Úteis**:
 > - [Rock Content](https://rockcontent.com/blog/personas/)
