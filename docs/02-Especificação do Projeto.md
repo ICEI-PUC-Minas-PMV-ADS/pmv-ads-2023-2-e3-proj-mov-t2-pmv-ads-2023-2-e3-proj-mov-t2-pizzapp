@@ -62,14 +62,23 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
+| Rafael Lima | O app deve encaminhar o cliente ao cardápio ao ser acessado | A apresentação do cardápio ao ser acessado é uma vital, pois oferece aos clientes uma visão completa e detalhada das opções de comida disponíveis no restaurante.|
+| Rafael Lima | Pode se ter um mecanismo de busca | A busca de itens no cardápio é essencial para proporcionar aos clientes uma experiência eficiente e conveniente ao explorar as opções disponíveis.|
+| Ana Santos | O cliente deve fazer pedidos pelo app | Essa funcionalidade é o cerne da aplicação, pois permite aos clientes realizar pedidos de forma rápida e conveniente através do aplicativo. |
+| Ana Santos | O app poderia mostrar o status do pedido ao cliente | A capacidade de os clientes visualizarem o status do pedido é fundamental para fornecer transparência e tranquilidade durante a espera pelo pedido. |
+| Ana Santos | Como garçonete, me ajudaria bastante poder visualizar os pedidos pelo app| Permitir que os funcionários visualizem os pedidos é fundamental para otimizar as operações internas do restaurante.|
+| Ana Santos | Para ajudar na organização dos pedidos, seria interessante um filtro sobre o status dos pedidos|A filtragem dos pedidos por status é essencial para otimizar a gestão interna dos pedidos e garantir um fluxo de trabalho mais organizado. |
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
+| Rafael Lima | A cozinha deve ser capaz de alterar o status dos pedidos |A alteração do status dos pedidos é crucial para acompanhar e gerenciar o progresso de cada pedido de forma eficaz.|
+| João Silva | O app deve conter funções exclusivas a funcionários, então deve haver um sistema de registro dos mesmos | A funcionalidade de permitir que os funcionários façam login no aplicativo é fundamental para garantir a segurança dos dados e a autenticação das ações realizadas pelos membros da equipe. Ao fornecer um sistema de login exclusivo para os funcionários, o restaurante pode controlar quem tem acesso às informações e funcionalidades exclusivas do restaurante.|
+| João Silva | Gostamos de inovar e trazer novas pizzas aos nossos clientes, então é necessário uma função que nos permita adicionar novos pratos | Permitir que os funcionários adicionem itens ao cardápio é importante para manter o menu atualizado e adaptado às mudanças nas ofertas do restaurante. |
+| João Silva | Para que os clientes saibam quais pratos estão disponíveis, precisamos de um sistema que coloque o status do prato |Permitir que os funcionários alterem o status de um item no cardápio é essencial para manter as informações precisas e atualizadas para os clientes. |
+| João Silva | Sempre haverão pratos que não chamam tanta atenção, caso isso aconteça, devemos ser capazes de retirá-los do cardápio |Permitir que os funcionários retirem itens do cardápio é fundamental para manter um menu atualizado e relevante para os clientes. |
+|João Silva| Os preços dos ingredientes sempre estão mudando, o que nos obriga também a mudar o valor de nossas pizzas e os clientes precisam ver isso no cardápio |A funcionalidade de permitir que os funcionários alterem o valor de um item no cardápio é importante para manter os preços atualizados e precisos para os clientes. |
 
 > **Links Úteis**:
 > - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
@@ -117,24 +126,26 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o cliente crie um pedido | ALTA | 
-|RF-002| Permitir que o cliente visualize o cardápio | ALTA | 
-|RF-003| Permitir que o cliente busque os itens dos cardápio | MÉDIA | 
+|RF-001| O app deve apresentar o cardápio ao ser acessado | ALTA | 
+|RF-002| Permitir que o cliente busque os itens do cardápio | MÉDIA | 
+|RF-003| Permitir que o cliente faça um pedido | ALTA | 
 |RF-004| Permitir que o cliente visualize o status do pedido | BAIXA | 
-|RF-005| Permitir que o funcionario faça login  | ALTA | 
-|RF-006| Permitir que o funcionario adicione um item no cardápio  | ALTA | 
-|RF-007| Permitir que o funcionario altere o status de um item no cardápio  | MÉDIA | 
-|RF-008| Permitir que o funcionario altere o valor de um item no cardápio  | MÉDIA | 
-|RF-009| Permitir que o funcionario visualize os pedidos  | ALTA | 
-|RF-010| Permitir que o funcionario filtre os pedidos por status   | MÉDIA | 
-|RF-011| Permitir que o funcionario altere o status dos pedidos  | ALTA | 
+|RF-005| Permitir que o funcionario visualize os pedidos  | ALTA | 
+|RF-006| Permitir que o funcionario filtre os pedidos por status   | MÉDIA | 
+|RF-007| Permitir que o funcionario altere o status dos pedidos  | ALTA | 
+|RF-008| Permitir que o funcionario faça login  | ALTA | 
+|RF-009| Permitir que o funcionario adicione um item no cardápio  | ALTA | 
+|RF-010| Permitir que o funcionario altere o status de um item no cardápio  | MÉDIA |
+|RF-011| Permitir que o funcionario retire um item do cardápio  | ALTA | 
+|RF-012| Permitir que o funcionario altere o valor de um item no cardápio  | MÉDIA | 
+
 
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
+|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | ALTA | 
 |RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
