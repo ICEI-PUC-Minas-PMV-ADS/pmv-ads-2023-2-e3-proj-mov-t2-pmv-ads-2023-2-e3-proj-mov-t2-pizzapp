@@ -6,7 +6,7 @@
 
 `Eixo 3 - 2023/2`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto em desenvolvimento é uma aplicação destinada a otimizar o ambiente de negócios de uma pizzaria. A aplicação busca proporcionar uma experiência aprimorada aos clientes, oferecendo um "garçom virtual" que permite que os clientes façam seus pedidos diretamente pelo aplicativo ao chegarem ao estabelecimento. Através do app, os clientes têm acesso a um cardápio detalhado, exibindo as variedades de pizzas e outros produtos disponíveis na casa. Além disso, a aplicação também desempenha um papel fundamental na eficiência da cozinha, permitindo que os funcionários da cozinha visualizem os pedidos em tempo real e atualizem os status dos pedidos conforme a demanda. Isso cria um fluxo de comunicação mais suave entre os clientes, o atendimento e a equipe da cozinha, melhorando a experiência geral no estabelecimento.
 
 ## Integrantes
 
