@@ -1,6 +1,17 @@
 # Introdução
 
-O projeto em desenvolvimento visa criar uma aplicação inovadora destinada a otimizar a experiência de clientes e funcionários em uma pizzaria. A aplicação tem como foco principal a introdução de um "garçom virtual" que permite aos clientes fazer pedidos através de um aplicativo móvel ao chegarem ao estabelecimento. Além disso, a aplicação facilitará a coordenação entre a equipe de atendimento e a equipe da cozinha, garantindo uma experiência mais fluida e eficiente para todos os envolvidos.
+Na contramão de todas as previsões, apesar da crise que vive o Brasil desde 2013, o mercado de gastronomia vem crescendo no país, gerando oportunidades de negócios e empregos e movimentando a economia em uma ascendência constante. 
+
+O setor de gastronomia já emprega mais gente do que o da construção civil, e continua crescendo. O ramo da gastronomia é sempre um atrativo para novos empreendedores e para aqueles que desejam expandir os seus negócios. Assim o setor é um dos segmentos que mais se potencializam graças as inovações tecnológicas.
+
+Nos últimos anos esse mercado consumidor se tornou cada vez mais exigente. Desse modo, medidas que dão a eles maior autonomia foram empregadas a fim de atender essas demandas de forma a agregar valor ao serviço, tornando-o eficiente e proporcionando comodidades para o cliente.
+
+Dentro desse universo, destaca-se o mercado de pizzarias, que cresceu quase 500% nos últimos 10 anos, segundo estudo realizado pela Associação Pizzarias Unidas do Brasil (Apubra). Estima-se que atualmente tenha mais de 100 mil estabelecimentos em operação no país.
+
+Assim num mercado tão concorrido, a ideia é não apenas deixar que os clientes se sintam mais confortáveis na hora de fazer seus pedidos, como também, que isso agilize os processos, uma vez que, o autoatendimento reduz o tempo de retirada de um pedido. Bem como, de sua posterior entrega a cozinha.
+
+Com o desenvolvimento do sistema, espera-se criar uma aplicação inovadora destinada a otimizar a experiência de clientes e funcionários em uma pizzaria. A aplicação tem como foco principal a introdução de um "garçom virtual" que permite aos clientes fazerem pedidos através de um aplicativo móvel ao chegarem ao estabelecimento. Além disso, a aplicação facilitará a coordenação entre a equipe de atendimento e a equipe da cozinha, garantindo uma experiência mais fluida e eficiente para todos os envolvidos, reduzindo gastos e aumento de produtividade uma vez que elimina os problemas decorrentes da gestão de pedidos manuais.
+
 
 ## Problema
 
