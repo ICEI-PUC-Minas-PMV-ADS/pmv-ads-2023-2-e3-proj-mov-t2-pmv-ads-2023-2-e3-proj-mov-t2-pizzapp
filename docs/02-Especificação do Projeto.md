@@ -128,15 +128,16 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-001| O app deve apresentar o cardápio ao ser acessado | ALTA | 
 |RF-002| Permitir que o cliente busque os itens do cardápio | MÉDIA | 
 |RF-003| Permitir que o cliente faça um pedido | ALTA | 
-|RF-004| Permitir que o cliente visualize o status do pedido | BAIXA | 
-|RF-005| Permitir que o funcionario visualize os pedidos  | ALTA | 
-|RF-006| Permitir que o funcionario filtre os pedidos por status   | MÉDIA | 
-|RF-007| Permitir que o funcionario altere o status dos pedidos  | ALTA | 
-|RF-008| Permitir que o funcionario faça login  | ALTA | 
-|RF-009| Permitir que o funcionario adicione um item no cardápio  | ALTA | 
-|RF-010| Permitir que o funcionario altere o status de um item no cardápio  | MÉDIA |
-|RF-011| Permitir que o funcionario retire um item do cardápio  | ALTA | 
-|RF-012| Permitir que o funcionario altere o valor de um item no cardápio  | MÉDIA | 
+|RF-004| Permitir que o cliente altere um pedido antes de submetê-lo ao restaurante | ALTA | 
+|RF-005| Permitir que o cliente visualize o status do pedido | BAIXA | 
+|RF-006| Permitir que o funcionario visualize os pedidos  | ALTA | 
+|RF-007| Permitir que o funcionario filtre os pedidos por status   | MÉDIA | 
+|RF-008| Permitir que o funcionario altere o status dos pedidos  | ALTA | 
+|RF-009| Permitir que o funcionario faça login  | ALTA | 
+|RF-010| Permitir que o funcionario adicione um item no cardápio  | ALTA | 
+|RF-011| Permitir que o funcionario altere o status de um item no cardápio  | MÉDIA |
+|RF-012| Permitir que o funcionario retire um item do cardápio  | ALTA | 
+|RF-013| Permitir que o funcionario altere o valor de um item no cardápio  | MÉDIA | 
 
 
 
@@ -148,7 +149,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-002| O aplicativo deve ser publicado num ambiente acessível somente para os clientes e funcionários do restaurante. |  ALTA | 
 |RNF-003| O sistema deve ser protegido contra acesso não autorizado. | ALTA | 
 |RNF-004| O sistema deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-|RNF-005| O sistema deve ter bom nível de contraste entre os elementos da tela em conformidade. |  ALTA |
+|RNF-005| O sistema deve ter bom nível de contraste entre os elementos da tela em conformidade. |  MÉDIA |
 |RNF-006| O sistema deve permitir o acesso de múltiplos usuários sem sofrer qualquer degradação no desempenho. |  ALTA |
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
@@ -199,6 +200,28 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de
 A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. 
 
 A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
+
+|      | RF-001 | RF002 | RF00 | 
+|------|-----------------------------------------|----|
+|RF-001| | ALTA | 
+|RF-002| | MÉDIA | 
+|RF-003| | ALTA | 
+|RF-004|  | ALTA | 
+|RF-005|  | BAIXA | 
+|RF-006|   | ALTA | 
+|RF-007|  | MÉDIA | 
+|RF-008|   | ALTA | 
+|RF-009|   | ALTA | 
+|RF-010|   | ALTA | 
+|RF-011|  | MÉDIA |
+|RF-012|  | ALTA | 
+|RF-013|  | MÉDIA | 
+|RNF-001|  | ALTA | 
+|RNF-002|  |  ALTA | 
+|RNF-003|  | ALTA | 
+|RNF-004||  BAIXA | 
+|RNF-005|  |  MÉDIA |
+|RNF-006|  |  ALTA |
 
 ![Exemplo de matriz de rastreabilidade](img/02-matriz-rastreabilidade.png)
 
