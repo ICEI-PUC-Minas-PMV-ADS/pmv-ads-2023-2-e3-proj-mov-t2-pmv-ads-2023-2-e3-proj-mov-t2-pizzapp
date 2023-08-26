@@ -140,11 +140,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-013| Permitir que o funcionario altere o valor de um item no cardápio  | MÉDIA | 
 
 
-
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
+|------|------------------------|-------|
 |RNF-001| O sistema deve ser responsivo para funcionar em um dispositivos móvel | ALTA | 
 |RNF-002| O aplicativo deve ser publicado num ambiente acessível somente para os clientes e funcionários do restaurante. |  ALTA | 
 |RNF-003| O sistema deve ser protegido contra acesso não autorizado. | ALTA | 
@@ -197,39 +196,27 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de
 
 # Matriz de Rastreabilidade
 
-A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. 
-
-A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
-
-|      | RF-001 | RF002 | RF00 | 
-|------|-----------------------------------------|----|
-|RF-001| | ALTA | 
-|RF-002| | MÉDIA | 
-|RF-003| | ALTA | 
-|RF-004|  | ALTA | 
-|RF-005|  | BAIXA | 
-|RF-006|   | ALTA | 
-|RF-007|  | MÉDIA | 
-|RF-008|   | ALTA | 
-|RF-009|   | ALTA | 
-|RF-010|   | ALTA | 
-|RF-011|  | MÉDIA |
-|RF-012|  | ALTA | 
-|RF-013|  | MÉDIA | 
-|RNF-001|  | ALTA | 
-|RNF-002|  |  ALTA | 
-|RNF-003|  | ALTA | 
-|RNF-004||  BAIXA | 
-|RNF-005|  |  MÉDIA |
-|RNF-006|  |  ALTA |
-
-![Exemplo de matriz de rastreabilidade](img/02-matriz-rastreabilidade.png)
-
-> **Links Úteis**:
-> - [Artigo Engenharia de Software 13 - Rastreabilidade](https://www.devmedia.com.br/artigo-engenharia-de-software-13-rastreabilidade/12822/)
-> - [Verificação da rastreabilidade de requisitos usando a integração do IBM Rational RequisitePro e do IBM ClearQuest Test Manager](https://developer.ibm.com/br/tutorials/requirementstraceabilityverificationusingrrpandcctm/)
-> - [IBM Engineering Lifecycle Optimization – Publishing](https://www.ibm.com/br-pt/products/engineering-lifecycle-optimization/publishing/)
-
+|   | RF-001 | RF-002 | RF-003 | RF-004 | RF-005 | RF-006 | RF-007 | RF-008 | RF-009 | RF-010 | RF-011 | RF-012 | RF-013 | RNF-001 | RNF-002 | RNF-003 |RNF-004  | RNF-005 | RNF-006 | | 
+|---|-----|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|-----|-----|---|
+|RF-001|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |     |    |
+|RF-002|   | x |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |     |    |
+|RF-003|   | x | x |   |   |   |   |   |   |   |   |   |   |   |   |   |   |     |    |
+|RF-004|   | x | x | x |   |   |   |   |   |   |   |   |   |   |   |   |   |     |    |
+|RF-005|   | x | x | x | x |   |   |   |   |   |   |   |   |   |   |   |   |     |    |
+|RF-006|   |   |   |   |   |   |   |   |   | x |   |   |   |   |   |   |   |     |    |
+|RF-007|   |   |   |   |   |   | x |   |   | x |   |   |   |   |   |   |   |     |    |
+|RF-008|   |   |   |   |   |   | x |   |   | x |   |   |   |   |   |   |   |     |    |
+|RF-009|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |     |    |
+|RF-010|   | x |   |   |   |   |   |   |   | x |   |   |   |   |   |   |   |     |    |
+|RF-011|   | x |   |   |   |   |   |   |   | x |   |   |   |   |   |   |   |     |    |
+|RF-012|   | x |   |   |   |   |   |   |   | x |   |   |   |   |   |   |   |     |    |
+|RF-013|   | x |   |   |   |   |   |   |   | x |   |   |   |   |   |   |   |     |    |
+|RNF-001|  | x |   |   |   |   |   |   |   |   |   |   |   | x |   |   |   |     |    |
+|RNF-002|  | x |   |   |   |   | x |   |   | x |   |   |   |   | x |   | x |     |    |
+|RNF-003|  | x |   |   |   |   |   |   |   | x |   |   |   |   | x | x |   |     |    |
+|RNF-004|  |   | x | x | x | x |   |   |   |   |   |   |   |   |   |   |   |     |    |
+|RNF-005|  | x | x |   |   |   | x |   |   |   |   |   |   |   | x |   |   |     |    |
+|RNF-006|  |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | x |     |    |
 
 # Gerenciamento de Projeto
 
