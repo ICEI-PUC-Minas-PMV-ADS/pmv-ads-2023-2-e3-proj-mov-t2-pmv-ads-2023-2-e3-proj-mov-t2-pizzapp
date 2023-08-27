@@ -224,22 +224,62 @@ De acordo com o PMBoK v6 as dez áreas que constituem os pilares para gerenciar 
 
 ## Gerenciamento de Tempo
 
-Com diagramas bem organizados que permitem gerenciar o tempo nos projetos, o gerente de projetos agenda e coordena tarefas dentro de um projeto para estimar o tempo necessário de conclusão.
+Apresentamos a análise PERT/CPM para o projeto de desenvolvimento do Pizzapp, um aplicativo de pedidos cujo podera ser feito por tablets implantados em cada mesa aonde os clientes irão realizar pedidos sem a nescessidade de atendimento humano para tirar o pedido.
 
-![Diagrama de rede simplificado notação francesa (método francês)](img/02-diagrama-rede-simplificado.png)
+A tabela a seguir detalha as atividades envolvidas no projeto, suas descrições, estimativas de tempo e as dependências entre elas:
+|ATIVIDADE | DESCRIÇÃO DA ATIVIDADE    | TEMPO MAIS CURTO | TEMPO MAIS PROVÁVEL | TEMPO ESPERADO | PREDECESSORA |
+| A        | Planejamento Inicial      |        5         |           7         |        5       |   não há     |
+| B        | Desenvolvimento App       |        10        |           17        |        17      |     A        |
+| C        | Implementação do Cardápio |        4         |           8         |        8       |     B        |
+| D        | Testes e Qualidade        |        3         |           7         |        7       |     C        |
+| E        | Treinamento da Equipe     |        2         |           3         |        2       |     D        |
+| F        | Implantação               |        2         |           4         |        4       |     E        |
 
-O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utilizada para controlar e gerenciar o cronograma de atividades de um projeto. Com ele, é possível listar tudo que precisa ser feito para colocar o projeto em prática, dividir em atividades e estimar o tempo necessário para executá-las.
+Análise:
 
-![Gráfico de Gantt](img/02-grafico-gantt.png)
+- A atividade A, "Planejamento Inicial", é a primeira do projeto e não tem predecessora. Ela tem um tempo estimado de 5 dias.
+- A atividade B, "Desenvolvimento App", depende da conclusão da atividade A. Suas estimativas de tempo variam de 10 a 17 dias.
+- A atividade C, "Criação do Cardápio", depende do desenvolvimento do aplicativo (atividade B) e tem estimativas de tempo entre 4 e 8 dias.
+- A atividade D, "Testes e Qualidade", depende da criação do cardápio (atividade C) e tem estimativas de tempo entre 3 e 7 - dias.
+- A atividade E, "Treinamento da Equipe", depende dos testes e da qualidade (atividade D) e tem estimativas de tempo entre 2 e 3 dias.
+- A atividade F, "Implantação", depende do Treinamento da Equipe (atividade E) e tem estimativas de tempo entre 2 e 4 dias.
+- O caminho crítico do projeto é A → B → C → D → E, com um tempo total estimado de 43 dias. Isso significa que qualquer atraso nas atividades do caminho crítico afetará o cronograma geral do projeto.
+
+![Gráfico de rede simplificado(método francês)](img/diagrama-gerenciamento.png)
 
 ## Gerenciamento de Equipe
 
-O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. 
+Equipe: Brendon, Iugor, Bruno
+Papéis:
+Brendon: Líder do Desenvolvimento
+Iugor e Bruno: Desenvolvedores
 
-![Simple Project Timeline](img/02-project-timeline.png)
+Criação do Cardápio:
+Equipe: Ricardo, Dani, Eryc
+Papéis:
+Ricardo: Líder de Criação de Cardápio
+Dani e Eryc: Designers e Criadores de Conteúdo
 
 ## Gestão de Orçamento
 
-O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo.
+Desenvolvimento do Aplicativo: R$18.600
+Testes e Qualidade: R$4.500
+Revisão e Aprovação: R$2.000
 
-![Orçamento](img/02-orcamento.png)
+- Custos de Hardware:
+Tablets: R$9.000 (para compra de tablets)
+Infraestrutura de Redes e Conectividade: R$2.500
+
+- Treinamento:
+Treinamento da Equipe: R$1.500
+
+- Custos de Materiais:
+Materiais de Marketing (para lançamento do cardápio): R$800
+
+- Custos de Gerenciamento de Projeto:
+Gerente de Projeto: R$7.500 (considerando um valor mensal para a duração do projeto)
+
+- Outros Custos:
+Reserva para Custos Imprevistos: R$4.000
+
+Total Estimado: R$50.400
