@@ -221,6 +221,7 @@ Apresentamos a análise PERT/CPM para o projeto de desenvolvimento do Pizzapp, u
 
 A tabela a seguir detalha as atividades envolvidas no projeto, suas descrições, estimativas de tempo e as dependências entre elas:
 |ATIVIDADE | DESCRIÇÃO DA ATIVIDADE    | TEMPO MAIS CURTO | TEMPO MAIS PROVÁVEL | TEMPO ESPERADO | PREDECESSORA |
+|----------|---------------------------|------------------|---------------------|----------------|--------------|
 | A        | Planejamento Inicial      |        5         |           7         |        5       |   não há     |
 | B        | Desenvolvimento App       |        10        |           17        |        17      |     A        |
 | C        | Implementação do Cardápio |        4         |           8         |        8       |     B        |
@@ -242,16 +243,19 @@ Análise:
 
 ## Gerenciamento de Equipe
 
-Equipe: Brendon, Iugor, Bruno
-Papéis:
-Brendon: Líder do Desenvolvimento
-Iugor e Bruno: Desenvolvedores
+# Desenvolvimento: 
+> Equipe: Brendon, Iugor, Bruno
 
-Criação do Cardápio:
-Equipe: Ricardo, Dani, Eryc
-Papéis:
-Ricardo: Líder de Criação de Cardápio
-Dani e Eryc: Designers e Criadores de Conteúdo
+> - Papéis: 
+> Brendon: Líder do Desenvolvimento
+> Iugor e Bruno: Desenvolvedores
+
+# Criação do Cardápio:
+> Equipe: Ricardo, Dani, Eryc
+
+> - Papéis:
+> Ricardo: Líder de Criação de Cardápio
+> Dani e Eryc: Designers e Criadores de Conteúdo
 
 ## Gestão de Orçamento
 
