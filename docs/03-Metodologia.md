@@ -34,6 +34,8 @@ etiquetas:
 - `bug`: uma funcionalidade encontra-se com problemas
 - `enhancement`: uma funcionalidade precisa ser melhorada
 - `feature`: uma nova funcionalidade precisa ser introduzida
+  
+![245900012-f0fe0325-5d11-40d1-9870-178d84c63b1e](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp/assets/106103247/a234bdaa-eee2-48c0-a9f1-7919fcce56d8)
 
 > **Links Úteis**:
 > - [Microfundamento: Gerência de Configuração](https://pucminas.instructure.com/courses/87878/)
@@ -51,13 +53,13 @@ A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para def
 
 A equipe está organizada da seguinte maneira:
 
-⦁	Scrum Master: Ricardo Moreira
+-	Scrum Master: Ricardo Moreira
 
-⦁	Product Owner: Iugor Sette
+-	Product Owner: Iugor Sette
 
-⦁	Equipe de Desenvolvimento: Ricardo Moreira, Dani Souza, Bruno de Oliveira, Brendon Guimarães, Eryc Lisboa e Iugor Sette
+-	Equipe de Desenvolvimento: Ricardo Moreira, Dani Souza, Bruno de Oliveira, Brendon Guimarães, Eryc Lisboa e Iugor Sette
 
-⦁	Equipe de Design: Iugor Sette
+-	Equipe de Design: Iugor Sette
 
 
 > **Links Úteis**:
@@ -80,6 +82,8 @@ Para organização e distribuição das tarefas do projeto, eu estarei utilizand
 ⦁	Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
 
 ⦁	Locked: Quando alguma coisa impede a conclusão da tarefa, ela é movida para esta lista juntamente com um comentário sobre o que está travando a tarefa.
+
+![Project Pizzapp](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp/assets/106103247/e2351db6-b87e-45d4-9794-24acc9b2f1bc)
  
 > **Links Úteis**:
 > - [Planejamento e Gestáo Ágil de Projetos](https://pucminas.instructure.com/courses/87878/pages/unidade-2-tema-2-utilizacao-de-ferramentas-para-controle-de-versoes-de-software)
