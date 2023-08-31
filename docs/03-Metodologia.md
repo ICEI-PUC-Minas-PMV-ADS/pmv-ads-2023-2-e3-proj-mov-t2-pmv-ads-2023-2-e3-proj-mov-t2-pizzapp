@@ -35,8 +35,6 @@ etiquetas:
 - `enhancement`: uma funcionalidade precisa ser melhorada
 - `feature`: uma nova funcionalidade precisa ser introduzida
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
-
 > **Links Úteis**:
 > - [Microfundamento: Gerência de Configuração](https://pucminas.instructure.com/courses/87878/)
 > - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
@@ -49,13 +47,18 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento.
 
-Exemplificação: A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe está organizada da seguinte maneira:
-- Scrum Master: Felipe Domingos;
-- Product Owner: Rommel Carneiro;
-- Equipe de Desenvolvimento: Pedro Penna, Pedro Ivo, Rodrigo Richard;
-- Equipe de Design: Simone Nogueira.
+A equipe está organizada da seguinte maneira:
+
+⦁	Scrum Master: Ricardo Moreira
+
+⦁	Product Owner: Iugor Sette
+
+⦁	Equipe de Desenvolvimento: Ricardo Moreira, Dani Souza, Bruno de Oliveira, Brendon Guimarães, Eryc Lisboa e Iugor Sette
+
+⦁	Equipe de Design: Iugor Sette
+
 
 > **Links Úteis**:
 > - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
@@ -64,7 +67,19 @@ Exemplificação: A equipe utiliza metodologias ágeis, tendo escolhido o Scrum 
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
+Para organização e distribuição das tarefas do projeto, eu estarei utilizando o Trello estruturado com as seguintes listas: 
+
+⦁	Backlog: recebe as tarefas a serem trabalhadas e representa o Product Backlog. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas a esta lista.
+
+⦁	To Do: Esta lista representa o Sprint Backlog. Este é o Sprint atual que estamos trabalhando.
+
+⦁	Doing: Quando uma tarefa tiver sido iniciada, ela é movida para cá.
+
+⦁	Test: Checagem de Qualidade. Quando as tarefas são concluídas, eles são movidas para o “CQ”. No final da semana, eu revejo essa lista para garantir que tudo saiu perfeito.
+
+⦁	Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
+
+⦁	Locked: Quando alguma coisa impede a conclusão da tarefa, ela é movida para esta lista juntamente com um comentário sobre o que está travando a tarefa.
  
 > **Links Úteis**:
 > - [Planejamento e Gestáo Ágil de Projetos](https://pucminas.instructure.com/courses/87878/pages/unidade-2-tema-2-utilizacao-de-ferramentas-para-controle-de-versoes-de-software)
@@ -78,13 +93,12 @@ Coloque  informações sobre detalhes da implementação do Scrum seguido pelo g
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+- Visual Studio Code.
+- Microsoft Teams
+- Figma
 
-O editor de código foi escolhido porque ele possui uma integração com o sistema de versão. As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. Por fim, para criar diagramas utilizamos essa ferramenta por melhor captar as necessidades da nossa solução.
-
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
+Foi utilizado o Visual Studio Code por ser uma IDE que a equipe está bem acostumada a utilizar e ele também permite implementar o sistema de versionamento do GitFlow. Foi escolhido o Microsoft Teams como a ferramenta de comunicação por ser a utilizada pela faculdade e também pela confiabilidade e costume da esquipe. O Figma foi selecionado por ser uma ferramenta que permite uma criação do projeto de interface
+de forma eficiente, nos dando os materiais necessário para tal.
  
 > **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
 > - [Slack](https://slack.com/)
