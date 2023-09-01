@@ -8,8 +8,8 @@ A metodologia contempla as definições de ferramental utilizado pela equipe tan
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
 |Ambiente|Plataforma|Link de Acesso|
 | --- | --- | --- |
-|Repositório de código fonte|GitHub|https://github.com/RicardoSiqueira01/BookWorld|
-|Documentos do projeto|GitHub|https://github.com/RicardoSiqueira01/BookWorld/tree/main/docs|
+|Repositório de código fonte|GitHub|https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp|
+|Documentos do projeto|GitHub|https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp/tree/main/docs|
 |Projeto de interfaces e Wirefrmaes|Figma|https://www.figma.com/files/recent?fuid=1220510214969639289|
 |Gerenciamento do Projeto|GitHub|https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/477/views/2|
 
