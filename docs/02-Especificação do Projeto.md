@@ -112,10 +112,14 @@ Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em segu
 
 Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Colocar no mínimo 5 indicadores. 
 
-Usar o seguinte modelo: 
+|Indicador| Objetivos | Descrição |  Cálculo | Fonte dados | Perspectiva |
+|-----------|------|------|----------------|----------------|---------|
+|Tempo oscilação de desempenho| Avaliar se o sistema oscila quando há muitas requisições simultâneas | Verificar se há alteração no tempo médio das funções quando há requisições simultâneas | | Tabela de testes de tempo | Atestar a eficiência do sistema em sua máxima utilização|
+|Média de tempo de visualização de item | Avaliar o tempo de visualização de itens no cardápio |Quantificar o tempo demorado entre o clique num item no cardápio e sua visualização | | Tabela de teste de tempo |Melhoria da velocidade da visualização de itens |
+|Tempo que o pedido leva para chegar à cozinha| Verificar se há eficiência no tempo dos pedidos | Quantificar o tempo demorado entre o pedido do cliente e seu aparecimento para os funcionários| | Tabela de teste des tempo | Atestar a eficiência da função de pedidos|
+|Tempo levado pela alteração de status de pedidos| Verificar se há eficiência na alteração de status dos pedidos | Quantificar o tempo médio das alterações de status dos pedidos | | Tabela de testes de tempo | Atestar a eficiência da função de alteração de status de pedido|
+|Média de clientes atendidos por dia| Quantificar a quantidade de clientes (e não de pedidos) | Verificar quantos clientes frequentam a pizzaria diariamente | | Tabela de testes de tempo | Quantificar o público do restaurante|
 
-![Indicadores de Desempenho](img/02-indic-desemp.png)
-Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori. 
 
 ## Requisitos
 
