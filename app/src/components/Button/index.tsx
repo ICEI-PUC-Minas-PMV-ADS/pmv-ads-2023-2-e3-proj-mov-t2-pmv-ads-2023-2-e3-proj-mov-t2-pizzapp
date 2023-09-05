@@ -1,17 +1,16 @@
-import { ButtonProps, Text, TouchableOpacity, View } from "react-native";
-import { styles } from "./style";
-
+import { ButtonProps, View } from "react-native";
+import { StyledButton, StyledButtonText } from "./style";
 
 interface IButtonProps extends ButtonProps {
-    title: string;
-    func: () => void;
+  title: string;
+  func: () => void;
 }
 export function Button(prop: IButtonProps) {
   return (
     <View>
-      <TouchableOpacity style={styles.button} onPress={prop.func}>
-        <Text style={styles.buttonText}>{prop.title}</Text>
-      </TouchableOpacity>
+      <StyledButton onPress={prop.func}>
+        <StyledButtonText>{prop.title}</StyledButtonText>
+      </StyledButton>
     </View>
   );
 }

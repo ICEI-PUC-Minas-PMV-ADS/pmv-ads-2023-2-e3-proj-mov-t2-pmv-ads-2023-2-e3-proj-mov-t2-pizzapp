@@ -1,6 +1,6 @@
 import { Text, View } from "react-native";
-import { styles } from "./style";
 import { Header } from "../../components/Header";
+import { styles } from "./style";
 
 export function HomeClient() {
     return (

@@ -1,21 +1,13 @@
-import { StyleSheet, Text, View } from 'react-native';
-import { colors } from './src/style/colors';
-import { Home } from './src/pages/Home';
+import { ThemeProvider } from "styled-components";
+
+import Theme from "@theme/index";
+import { Home } from "@screens/Home";
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Home/>
-    </View>
+    <ThemeProvider theme={Theme}>
+      <Home />
+    </ThemeProvider>
   );
 }
-
-const styles = StyleSheet.create({
-
-  container: {
-    flex: 1,
-    backgroundColor: colors.yellow,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

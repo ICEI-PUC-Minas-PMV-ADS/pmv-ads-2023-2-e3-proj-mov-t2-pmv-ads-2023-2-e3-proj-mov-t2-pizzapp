@@ -1,17 +1,21 @@
-import { StyleSheet } from "react-native";
-import { colors } from "../../style/colors";
 
-export const styles = StyleSheet.create({
-    buttonText: {
-        color: colors.pastel,
-        fontSize: 24
-      },
-      button: {
-        width: 280,
-        height: 61,
-        borderRadius: 10,
-        backgroundColor:  colors.red,
-        alignItems: 'center',
-        justifyContent: 'center'
-      },
-});
+import styled from "styled-components/native";
+
+
+export const StyledButton = styled.TouchableOpacity`
+    color: ${({theme}) => theme.COLORS.YELLOW_300};
+    font-size: ${({theme}) => theme.FONT_SIZE.XL};
+    width: 280px;
+    height: 61px;
+    border-radius: 10px;
+    background-color:  ${({theme}) => theme.COLORS.RED};
+    align-items: center;
+    justify-content: center;
+`;
+
+export const StyledButtonText = styled.Text`  
+    color: ${({theme}) => theme.COLORS.YELLOW_300};
+    font-size: ${({theme}) => theme.FONT_SIZE.XL};
+    font-weight: bold;
+    text-align: center;
+`;
