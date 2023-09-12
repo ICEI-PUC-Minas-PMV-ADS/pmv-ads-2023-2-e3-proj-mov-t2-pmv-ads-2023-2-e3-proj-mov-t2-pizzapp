@@ -33,7 +33,41 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Rel
 
 ## Modelo Físico
 
-Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
+-- Criação do banco de dados --
+> CREATE DATABASE pizzaria;
+
+ -- Criação da tabela 'clientes' --
+> CREATE TABLE clientes (
+>    cliente_id INT PRIMARY KEY AUTO_INCREMENT,
+>    nome VARCHAR(100),
+>     mesa INT
+>);
+
+-- Criação da tabela 'menu_pizzas' --
+> CREATE TABLE menu_pizzas (
+>    pizza_id INT PRIMARY KEY AUTO_INCREMENT,
+>    nome VARCHAR(100),
+>    preco DECIMAL(10, 2)
+> );
+
+ -- Criação da tabela 'pedidos' --
+> CREATE TABLE pedidos (
+>    pedido_id INT PRIMARY KEY AUTO_INCREMENT,
+>    cliente_id INT,
+>    status ENUM('pendente', 'em_preparo', 'pronto'),
+>    data_pedido TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+>    FOREIGN KEY (cliente_id) REFERENCES clientes(cliente_id)
+> );
+
+ -- Criação da tabela 'itens_pedido' --
+> CREATE TABLE itens_pedido (
+>    item_id INT PRIMARY KEY AUTO_INCREMENT,
+>    pedido_id INT,
+>    pizza_id INT,
+>    quantidade INT,
+>    FOREIGN KEY (pedido_id) REFERENCES pedidos(pedido_id),
+>    FOREIGN KEY (pizza_id) REFERENCES menu_pizzas(pizza_id)
+> );
 
 ## Tecnologias Utilizadas
 
