@@ -1,17 +1,32 @@
-import { Text, View } from "react-native";
-import { Header } from "../../components/Header";
+import { useNavigation } from "@react-navigation/native";
+
 import { Container, Page } from "./style";
+
+import { Header } from "@components/Header";
 import { Button } from "@components/Button";
+import { Input } from "@components/Input";
+
+
 export function HomeClient() {
-    return (
-        <Page>
-         <Header showBackButton />
-         <Container>
-           <Button title="Cliente"  />
-           <Button 
-           title="Funcionário" 
-           onPress={()=>{}} />
-         </Container>
-       </Page>
-    )
+  const navigation = useNavigation();
+  function goToMenu() {
+    navigation.navigate("menu");
+  }
+  return (
+    <Page>
+      <Header showBackButton />
+      <Container>
+        <Input
+            placeholder="Informe o seu nome"
+            autoCorrect={false}
+        />
+        <Input
+            placeholder="Informe a sua mesa"
+            autoCorrect={false}
+            keyboardType="numeric"
+        />
+        <Button title="Ver Cardápio" onPress={goToMenu} />
+      </Container>
+    </Page>
+  );
 }
