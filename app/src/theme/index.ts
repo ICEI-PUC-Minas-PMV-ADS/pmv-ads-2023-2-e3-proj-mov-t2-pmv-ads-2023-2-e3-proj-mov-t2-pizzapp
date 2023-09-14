@@ -12,6 +12,8 @@ export default {
     
     LIME_400: '#8A943A',
     LIME_800: '#5A6126',
+    WHITE: '#FFFFFF',
+    BLACK: '#000000',
   },
   FONT_SIZE: {
     SM: 14,

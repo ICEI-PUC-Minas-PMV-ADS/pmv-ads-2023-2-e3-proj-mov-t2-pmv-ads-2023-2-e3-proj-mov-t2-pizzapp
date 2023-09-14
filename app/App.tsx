@@ -1,13 +1,15 @@
 import { ThemeProvider } from "styled-components";
 
 import Theme from "@theme/index";
-import { Home } from "@screens/Home";
 
+import { StatusBar } from "expo-status-bar";
+import { Routes } from "./src/routes";
 
 export default function App() {
   return (
     <ThemeProvider theme={Theme}>
-      <Home />
+      <StatusBar style="dark" backgroundColor="transparent" translucent />
+      <Routes />
     </ThemeProvider>
   );
 }

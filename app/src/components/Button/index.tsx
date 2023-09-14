@@ -1,16 +1,15 @@
-import { ButtonProps, View } from "react-native";
-import { StyledButton, StyledButtonText } from "./style";
+import { TouchableOpacityProps } from "react-native";
 
-interface IButtonProps extends ButtonProps {
+import { ButtonTypeStyleProps, Container, Title } from "./style";
+
+type Props = TouchableOpacityProps & {
   title: string;
-  func: () => void;
-}
-export function Button(prop: IButtonProps) {
+  type?: ButtonTypeStyleProps;
+};
+export function Button({ title, type = "PRIMARY", ...rest }: Props) {
   return (
-    <View>
-      <StyledButton onPress={prop.func}>
-        <StyledButtonText>{prop.title}</StyledButtonText>
-      </StyledButton>
-    </View>
+    <Container type={type} {...rest}>
+      <Title>{title}</Title>
+    </Container>
   );
 }

@@ -3,7 +3,7 @@ import styled from "styled-components/native";
 
 export const Page = styled(SafeAreaView)`
   flex: 1;
-  background-color: ${({ theme }) => theme.COLORS.YELLOW_500};
+  background-color: ${({ theme }) => theme.COLORS.ORANGE_500};
   padding: 24px;
 `;
 export const Container = styled.View`
