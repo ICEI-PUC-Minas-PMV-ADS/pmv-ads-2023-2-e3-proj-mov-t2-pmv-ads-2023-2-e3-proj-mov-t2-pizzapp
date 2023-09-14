@@ -7,9 +7,9 @@ export function HomeAdmin() {
         <Page>
          <Header showBackButton admin />
          <Container>
-           <Button title="Cliente"  />
+           <Button title="Cardápio"  />
            <Button 
-           title="Funcionário" 
+           title="Pedidos" 
            onPress={()=>{}} />
          </Container>
        </Page>

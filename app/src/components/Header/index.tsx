@@ -8,6 +8,7 @@ import {
   StyledTitle,
 } from "./style";
 import { StyledHeader } from "./style";
+import { Logo } from "@components/Logo";
 
 type Props = {
   showBackButton?: boolean;
@@ -26,10 +27,7 @@ export function Header({ showBackButton = false, admin = false }: Props) {
         </BackButton>
       )}
       <StyledPizza source={require("../../../assets/pizza.png")} />
-      <StyledTitle admin={admin}>
-        Pizz<Highlight>App</Highlight>
-      </StyledTitle>
-        {admin && <StyledSubtitle>Funcionário</StyledSubtitle>}
+        <Logo admin={admin} />
     </StyledHeader>
   );
 }

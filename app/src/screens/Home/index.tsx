@@ -11,15 +11,15 @@ export function Home() {
     navigation.navigate("homeClient");
   }
 
-  function handleHomeAdmin() {
-    navigation.navigate("homeAdmin");
+  function handleLogin() {
+    navigation.navigate("login");
   }
   return (
     <Page>
       <Header />
       <Container>
         <Button title="Cliente" onPress={handleHomeClient} />
-        <Button title="Funcionário" onPress={handleHomeAdmin} />
+        <Button title="Funcionário" onPress={handleLogin} />
       </Container>
     </Page>
   );
