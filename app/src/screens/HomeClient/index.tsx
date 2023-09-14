@@ -5,12 +5,14 @@ import { Container, Page } from "./style";
 import { Header } from "@components/Header";
 import { Button } from "@components/Button";
 import { Input } from "@components/Input";
+import { Alert } from "react-native";
 
 
 export function HomeClient() {
   const navigation = useNavigation();
-  function goToMenu() {
-    navigation.navigate("menu");
+  function building() {
+    Alert.alert("Cardápio", "Cardápio em construção");
+    // navigation.navigate("menu");
   }
   return (
     <Page>
@@ -24,8 +26,9 @@ export function HomeClient() {
             placeholder="Informe a sua mesa"
             autoCorrect={false}
             keyboardType="numeric"
+            returnKeyType="done"
         />
-        <Button title="Ver Cardápio" onPress={goToMenu} />
+        <Button title="Ver Cardápio" onPress={building} />
       </Container>
     </Page>
   );
