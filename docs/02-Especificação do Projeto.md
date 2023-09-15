@@ -118,8 +118,9 @@ Apresente aqui os principais indicadores de desempenho e algumas metas para o pr
 |Média de tempo de visualização de item | Avaliar o tempo de visualização de itens no cardápio |Quantificar o tempo demorado entre o clique num item no cardápio e sua visualização | | Tabela de teste de tempo |Melhoria da velocidade da visualização de itens |
 |Tempo que o pedido leva para chegar à cozinha| Verificar se há eficiência no tempo dos pedidos | Quantificar o tempo demorado entre o pedido do cliente e seu aparecimento para os funcionários| | Tabela de teste des tempo | Atestar a eficiência da função de pedidos|
 |Tempo levado pela alteração de status de pedidos| Verificar se há eficiência na alteração de status dos pedidos | Quantificar o tempo médio das alterações de status dos pedidos | | Tabela de testes de tempo | Atestar a eficiência da função de alteração de status de pedido|
-|Média de clientes atendidos por dia| Quantificar a quantidade de clientes (e não de pedidos) | Verificar quantos clientes frequentam a pizzaria diariamente | | Tabela de testes de tempo | Quantificar o público do restaurante|
-
+|Média de clientes atendidos por dia| Quantificar a quantidade de clientes (e não de pedidos) | Verificar quantos clientes frequentam a pizzaria diariamente | | Tabela de Vendas por Dia da Semana | Quantificar o público do restaurante|
+|Itens pedidos por dia| Quantificar os itens vendidos em cada dia| Verificar, por dia da semana, o número de pedidos| | Tabela de Vendas por Dia da Semana | Produzir dados para melhorar a estratégia de vendas|
+|Itens mais pedidos por dia| Quantificar os itens mais vendidos em cada dia| Verificar quais são, por dia da semana, os itens mais pedidos| | Tabela de Vendas por Dia da Semana | Produzir dados para melhorar a estratégia de vendas|
 
 ## Requisitos
 
