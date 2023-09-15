@@ -104,7 +104,7 @@ Por fim, uma segunda tabela servirá para mensurar o sucesso financeiro do resta
 
   **Julgamento das métricas de qualidade**
 
-	As métricas de qualidade (quanto à Funcionalidade do Software: Acurácia e Segurança de Acesso; quanto à Usabilidade: Comportamento em relação ao tempo; quanto ao sucesso financeiro: Média de Clientes Atendidos por Dia, Itens mais pedidos por dia) serão utilizadas para determinar se o aplicativo entregue cumpre os objetivos planejados.
+As métricas de qualidade (quanto à Funcionalidade do Software: Acurácia e Segurança de Acesso; quanto à Usabilidade: Comportamento em relação ao tempo; quanto ao sucesso financeiro: Média de Clientes Atendidos por Dia, Itens mais pedidos por dia) serão utilizadas para determinar se o aplicativo entregue cumpre os objetivos planejados.
 Aquelas que constarão na Tabela de Testes de Tempo serão consideradas de três maneiras: se as funções gerarem respostas de mais de dez segundos, elas serão consideradas insatisfatórias; se gerarem respostas de até dez segundos, satisfatórias, se gerarem uma resposta de até três segundos serão consideradas muito satisfatórias.
 Aquelas que constarão Tabela de Vendas por Dia da Semana terão métricas estipuladas pelo próprio restaurante, uma vez que elas variam de acordo com a lotação do mesmo e a quantidade de clientes que ele pode atender diariamente. Caso a média de clientes atendidos por dia seja inferior a um terço da lotação máxima do restaurante, o negócio a qualidade será considera insatisfatória, caso seja igual a um terço, será considerada satisfatória e, caso seja maior, muito satisfatória.
 
