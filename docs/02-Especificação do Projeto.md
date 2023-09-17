@@ -90,17 +90,16 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 ### Análise da Situação Atual
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional. 
+Com o crescimento do setor gastronômico os restaurantes vêm adotando o uso dos “garçons virtuais” com o objetivo de otimizar o atendimento, sobretudo em dias de grandes movimentos. O processo tradicional de atendimento gera no cliente uma experiência de ineficiência produzindo longos tempos de espera e erros na comunicação entre garçons e a cozinha. A falta de um sistema integrado também pode levar a problemas de cooperação entre a equipe de atendimento e a equipe de cozinha, afetando a qualidade do serviço prestado.
 
 ### Descrição Geral da Proposta
 
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+Pensando nisso o projeto da Pizzapp busca trazer ao cliente a melhor experiência em atendimento num mercado competitivo e sólido como é o das pizzarias. Nosso aplicativo propicia agilidade aos pedidos, já que são enviados diretamente para a cozinha, minimiza erros de pedidos e melhora a coordenação interna entre a área de atendimento e a cozinha, além de uma maior discrição para o cliente e até mesmo a diminuição do número de funcionários no atendimento.
 
-### Processo 1 – NOME DO PROCESSO
+### Processo – Modelagem do Processo de Negócio Pizzapp
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp/assets/114544326/73400d65-2083-4f21-a138-bd143db4eeac)
 
-![Processo 1](img/02-bpmn-proc1.png)
 
 ### Processo 2 – NOME DO PROCESSO
 
