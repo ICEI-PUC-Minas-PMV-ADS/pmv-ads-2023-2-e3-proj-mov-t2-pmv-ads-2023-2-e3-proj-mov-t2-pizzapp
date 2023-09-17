@@ -102,9 +102,7 @@ Pensando nisso o projeto da Pizzapp busca trazer ao cliente a melhor experiênci
 
 
 
-### Processo 2 – NOME DO PROCESSO
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
 
 ![Processo 2](img/02-bpmn-proc2.png)
 
