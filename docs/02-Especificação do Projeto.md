@@ -98,7 +98,8 @@ Pensando nisso o projeto da Pizzapp busca trazer ao cliente a melhor experiênci
 
 ### Processo – Modelagem do Processo de Negócio Pizzapp
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp/assets/114544326/73400d65-2083-4f21-a138-bd143db4eeac)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp/assets/114544326/241556a1-9289-43c5-9697-c4022b71270d)
+
 
 
 ### Processo 2 – NOME DO PROCESSO
