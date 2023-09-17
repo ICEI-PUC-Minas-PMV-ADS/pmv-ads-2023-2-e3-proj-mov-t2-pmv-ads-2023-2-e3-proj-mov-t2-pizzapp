@@ -104,7 +104,6 @@ Pensando nisso o projeto da Pizzapp busca trazer ao cliente a melhor experiênci
 
 
 
-![Processo 2](img/02-bpmn-proc2.png)
 
 ## Indicadores de Desempenho
 
