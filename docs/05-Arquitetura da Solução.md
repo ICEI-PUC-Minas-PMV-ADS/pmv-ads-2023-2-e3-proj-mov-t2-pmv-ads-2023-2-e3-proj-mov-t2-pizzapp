@@ -78,7 +78,7 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
+Nosso aplicativo não necessitará de hospedagem, pois será executado localmente.
 
 > **Links Úteis**:
 >
