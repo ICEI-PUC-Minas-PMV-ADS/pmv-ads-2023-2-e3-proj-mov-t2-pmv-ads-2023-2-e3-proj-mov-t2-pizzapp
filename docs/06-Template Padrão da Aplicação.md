@@ -5,17 +5,17 @@
 Layout padrão da aplicação que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.Para uma experiência mais completa e interativa no Figma, convidamos você a, [clicar aqui](https://www.figma.com/proto/fLRqeeEEDk9WwmxCAbL44b/Pizzapp?type=design&node-id=2-304&t=nKCt0X9XK8yxn07f-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A304) .
 
 
-
-## Intro
+## Cliente
+### Intro
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp/assets/81201021/c38cdb8b-ee49-4da7-8387-6a04a86b4cab)
 ### Home - Menu
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp/assets/81201021/625fb52c-6265-41d2-baff-91455e016877)
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp/assets/81201021/e1cd816f-f63b-4b97-843d-ba73118a5ae3)
-## Produto
+### Produto
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp/assets/81201021/b4c90aba-33f2-4401-863c-f0771c1a9598)
-## Carrinho
+### Carrinho
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp/assets/81201021/36cd9185-a904-4a02-be12-9af10289d3d6)
-## Acompanhamento
+### Acompanhamento
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp/assets/81201021/71a99279-dcf3-4368-81b3-9b36cbbad059)
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp/assets/81201021/4dc65594-f917-4a80-9b7c-ebce5cf95544)
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp/assets/81201021/373b798e-2467-4c17-b918-0f42f9c0abaf)
