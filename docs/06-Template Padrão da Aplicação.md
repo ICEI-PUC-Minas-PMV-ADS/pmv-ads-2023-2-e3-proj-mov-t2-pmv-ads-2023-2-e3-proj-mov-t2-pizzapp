@@ -2,7 +2,7 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>
 
-Layout padrão da aplicação que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+Layout padrão da aplicação que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.Para uma experiência mais completa e interativa no Figma, convidamos você a, [clicar aqui](https://www.figma.com/proto/fLRqeeEEDk9WwmxCAbL44b/Pizzapp?type=design&node-id=2-304&t=nKCt0X9XK8yxn07f-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A304) .
 
 
 
