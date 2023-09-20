@@ -30,51 +30,281 @@ O Esquema Relacional corresponde à representação dos dados em tabelas juntame
  
 As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Relacional”.
 
-> - [Criando um modelo relacional - Documentação da IBM](https://www.ibm.com/docs/pt-br/cognos-analytics/10.2.2?topic=designer-creating-relational-model)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp/assets/81201021/381d99d5-0508-44d7-8a39-b4fa123e943f)
+
 
 ## Modelo Físico
 
--- Criação do banco de dados --
-> CREATE DATABASE pizzaria;
+--
 
- -- Criação da tabela 'clientes' --
-> CREATE TABLE clientes (
->    cliente_id INT PRIMARY KEY AUTO_INCREMENT,
->    nome VARCHAR(100),
->     mesa INT
->);
+-- Banco de dados: `pizzapp`
 
--- Criação da tabela 'menu_pizzas' --
-> CREATE TABLE menu_pizzas (
->    pizza_id INT PRIMARY KEY AUTO_INCREMENT,
->    nome VARCHAR(100),
->    preco DECIMAL(10, 2)
-> );
+--
 
- -- Criação da tabela 'pedidos' --
-> CREATE TABLE pedidos (
->    pedido_id INT PRIMARY KEY AUTO_INCREMENT,
->    cliente_id INT,
->    status ENUM('pendente', 'em_preparo', 'pronto'),
->    data_pedido TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
->    FOREIGN KEY (cliente_id) REFERENCES clientes(cliente_id)
-> );
+ 
 
- -- Criação da tabela 'itens_pedido' --
-> CREATE TABLE itens_pedido (
->    item_id INT PRIMARY KEY AUTO_INCREMENT,
->    pedido_id INT,
->    pizza_id INT,
->    quantidade INT,
->    FOREIGN KEY (pedido_id) REFERENCES pedidos(pedido_id),
->    FOREIGN KEY (pizza_id) REFERENCES menu_pizzas(pizza_id)
-> );
+CREATE TABLE `Admin` (
+
+  `Id` int NOT NULL,
+
+  `Name` text NOT NULL,
+
+  `Password` text NOT NULL
+
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+ 
+
+-- --------------------------------------------------------
+
+ 
+
+--
+
+-- Estrutura para tabela `Grupos`
+
+--
+
+ 
+
+CREATE TABLE `Grupos` (
+
+  `Id` int NOT NULL,
+
+  `Name` varchar(100) NOT NULL,
+
+  `Itens` int NOT NULL
+
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+ 
+
+-- --------------------------------------------------------
+
+ 
+
+--
+
+-- Estrutura para tabela `Item`
+
+--
+
+ 
+
+CREATE TABLE `Item` (
+
+  `Id` int NOT NULL,
+
+  `Name` text NOT NULL,
+
+  `Picture` varchar(1000) NOT NULL,
+
+  `Description` varchar(1000) NOT NULL,
+
+  `Price` int NOT NULL
+
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+ 
+
+-- --------------------------------------------------------
+
+ 
+
+--
+
+-- Estrutura para tabela `Pedido`
+
+--
+
+ 
+
+CREATE TABLE `Pedido` (
+
+  `Id` int NOT NULL,
+
+  `Status` text NOT NULL,
+
+  `Name` text NOT NULL,
+
+  `Mesa` varchar(50) NOT NULL,
+
+  `Itens` int NOT NULL
+
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+ 
+
+--
+
+-- Índices para tabelas despejadas
+
+--
+
+ 
+
+--
+
+-- Índices de tabela `Admin`
+
+--
+
+ALTER TABLE `Admin`
+
+  ADD PRIMARY KEY (`Id`);
+
+ 
+
+--
+
+-- Índices de tabela `Grupos`
+
+--
+
+ALTER TABLE `Grupos`
+
+  ADD PRIMARY KEY (`Id`),
+
+  ADD KEY `Itens` (`Itens`);
+
+ 
+
+--
+
+-- Índices de tabela `Item`
+
+--
+
+ALTER TABLE `Item`
+
+  ADD PRIMARY KEY (`Id`);
+
+ 
+
+--
+
+-- Índices de tabela `Pedido`
+
+--
+
+ALTER TABLE `Pedido`
+
+  ADD PRIMARY KEY (`Id`),
+
+  ADD KEY `Itens` (`Itens`);
+
+ 
+
+--
+
+-- AUTO_INCREMENT para tabelas despejadas
+
+--
+
+ 
+
+--
+
+-- AUTO_INCREMENT de tabela `Admin`
+
+--
+
+ALTER TABLE `Admin`
+
+  MODIFY `Id` int NOT NULL AUTO_INCREMENT;
+
+ 
+
+--
+
+-- AUTO_INCREMENT de tabela `Grupos`
+
+--
+
+ALTER TABLE `Grupos`
+
+  MODIFY `Id` int NOT NULL AUTO_INCREMENT;
+
+ 
+
+--
+
+-- AUTO_INCREMENT de tabela `Item`
+
+--
+
+ALTER TABLE `Item`
+
+  MODIFY `Id` int NOT NULL AUTO_INCREMENT;
+
+ 
+
+--
+
+-- AUTO_INCREMENT de tabela `Pedido`
+
+--
+
+ALTER TABLE `Pedido`
+
+  MODIFY `Id` int NOT NULL AUTO_INCREMENT;
+
+ 
+
+--
+
+-- Restrições para tabelas despejadas
+
+--
+
+ 
+
+--
+
+-- Restrições para tabelas `Grupos`
+
+--
+
+ALTER TABLE `Grupos`
+
+  ADD CONSTRAINT `Grupos_ibfk_1` FOREIGN KEY (`Itens`) REFERENCES `Item` (`Id`) ON DELETE RESTRICT ON UPDATE CASCADE;
+
+ 
+
+--
+
+-- Restrições para tabelas `Pedido`
+
+--
+
+ALTER TABLE `Pedido`
+
+  ADD CONSTRAINT `Pedido_ibfk_1` FOREIGN KEY (`Itens`) REFERENCES `Item` (`Id`) ON DELETE RESTRICT ON UPDATE CASCADE;
+
 
 ## Tecnologias Utilizadas
 
 Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
 
 Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+
+  ### Linguagens
+  - Typescript
+      
+  ### Bibliotecas
+  - React Native
+  - [PhosphorIcon](https://phosphoricons.com/)
+  - [Styled Components](https://styled-components.com/)
+  - [React Navigator](https://reactnavigation.org/)
+  - [json-server](https://www.npmjs.com/package/json-server)
+
+  ### IDE
+  - Visual Studio Code
+  - Android Studio
+
+  ### Ferramentas
+  - Figma
+
 
 ## Hospedagem
 
