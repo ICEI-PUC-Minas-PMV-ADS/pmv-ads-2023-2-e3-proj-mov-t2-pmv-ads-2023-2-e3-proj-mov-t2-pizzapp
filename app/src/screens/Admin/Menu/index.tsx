@@ -1,8 +1,8 @@
 import { Alert} from "react-native";
 import { Container, Page } from "./style";
 import { Button } from "@components/Button";
-import { AppContext } from "@context/AppContext";
 import { Header } from "@components/Header";
+import { StraightHeader } from "@components/StraightHeader";
 export function MenuAdmin() {
   function goToOrder() {
     Alert.alert("Pedidos", "Pedidos em construção");
@@ -15,17 +15,12 @@ export function MenuAdmin() {
   }
 
   return (
-    <AppContext.Provider
-      value={{
-        admin: true,
-      }}
-    >
       <Page>
-        <Header showBackButton/>
+        <StraightHeader showBackButton admin/>
         <Container>
+          
          
         </Container>
       </Page>
-    </AppContext.Provider>
   );
 }

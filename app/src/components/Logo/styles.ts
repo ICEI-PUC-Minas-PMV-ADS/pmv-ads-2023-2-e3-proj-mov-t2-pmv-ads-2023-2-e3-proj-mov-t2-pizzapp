@@ -3,7 +3,8 @@ import styled, { css } from "styled-components/native";
 type Props = {
   admin: boolean;
 };
-
+export const Container = styled.View`
+`;
 export const Highlight = styled.Text`
   color: ${({ theme }) => theme.COLORS.RED};
 `;
@@ -16,8 +17,8 @@ export const StyledSubtitle = styled.Text`
     text-align: center;
 
     position: absolute;
-    bottom: 15px;
-    left: 110px;
+    bottom: -10px;
+    left: 1px;
   `}
 `;
 

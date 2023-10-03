@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Iugor Sette",
+      "username": "iugorsette",
+      "email": "iugorsette@pucminas.com.br",
+      "password": "123456"
+    },
+    {
+        "id": 2,
+        "name": "John",
+        "username": "iugorsette",
+        "email": "iugor@com.br",
+        "password": "123456"
+      }
+  ]
+}

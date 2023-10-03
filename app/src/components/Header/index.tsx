@@ -2,10 +2,7 @@ import { useNavigation } from "@react-navigation/native";
 import {
   BackButton,
   BackIcon,
-  Highlight,
   StyledPizza,
-  StyledSubtitle,
-  StyledTitle,
 } from "./style";
 import { StyledHeader } from "./style";
 import { Logo } from "@components/Logo";
