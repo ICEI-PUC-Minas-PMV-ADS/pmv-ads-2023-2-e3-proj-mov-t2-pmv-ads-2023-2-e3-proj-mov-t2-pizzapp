@@ -23,5 +23,4 @@ export default {
     XXL: 32,
     EXL: 40,
   }
-  
 }

@@ -2,21 +2,16 @@ import { useNavigation } from "@react-navigation/native";
 import {
   Button,
   BackIcon,
-  Highlight,
   StyledPizza,
-  StyledSubtitle,
-  StyledTitle,
   SignOutIcon,
 } from "./style";
 import { StyledHeader } from "./style";
 import { Logo } from "@components/Logo";
 
 type Props = {
-  showBackButton?: boolean;
   admin?: boolean;
 };
 export function StraightHeader({
-  showBackButton = false,
   admin = false,
 }: Props) {
   const navigation = useNavigation();

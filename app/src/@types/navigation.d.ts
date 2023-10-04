@@ -8,6 +8,7 @@ export declare global {
         menu: undefined;
         chart: undefined;
         order: undefined;
+        menuAdmin: undefined;
       }
     }
   }

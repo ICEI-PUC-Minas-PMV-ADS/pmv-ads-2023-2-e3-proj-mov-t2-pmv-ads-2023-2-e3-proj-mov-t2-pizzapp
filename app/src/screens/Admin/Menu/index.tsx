@@ -1,26 +1,23 @@
-import { Alert} from "react-native";
-import { Container, Page } from "./style";
-import { Button } from "@components/Button";
-import { Header } from "@components/Header";
+import { Container, InputButton, Page, Texto } from "./style";
 import { StraightHeader } from "@components/StraightHeader";
+import { Button } from "@components/Button";
+import { Input } from "@components/Input";
+
+import { View } from "react-native";
+
 export function MenuAdmin() {
-  function goToOrder() {
-    Alert.alert("Pedidos", "Pedidos em construção");
-    // navigation.navigate("order");
-  }
-
-  function goToMenu() {
-    Alert.alert("Cardápio", "Cardápio em construção");
-    // navigation.navigate("menu");
-  }
-
   return (
-      <Page>
-        <StraightHeader showBackButton admin/>
-        <Container>
-          
-         
-        </Container>
-      </Page>
+    <Page>
+      <StraightHeader />
+
+      <Container>
+        <Texto>Aqui tem um lista</Texto>
+        <InputButton>
+          <Input />
+          <Button size="SMALL" title="+" />
+        </InputButton>
+        <Button title="Fechar pedido" type="SECONDARY" />
+      </Container>
+    </Page>
   );
 }

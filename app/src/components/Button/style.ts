@@ -5,14 +5,15 @@ export type ButtonTypeStyleProps = "PRIMARY" | "SECONDARY";
 
 type Props = {
   type: ButtonTypeStyleProps;
+  size: "SMALL" | "MEDIUM" | "LARGE";
 };
 
 export const Container = styled(TouchableOpacity)<Props>`
-  ${({ theme }) => css`
+  ${({ theme, size }) => css`
     background-color: ${theme.COLORS.RED};
     color: ${theme.COLORS.YELLOW_300};
     font-size: ${theme.FONT_SIZE.XL}px;
-    width: 280px;
+    width: ${size === "LARGE" ? 280 : 61}px;
     height: 61px;
     border-radius: 10px;
     background-color: ${({ theme, type }) =>
