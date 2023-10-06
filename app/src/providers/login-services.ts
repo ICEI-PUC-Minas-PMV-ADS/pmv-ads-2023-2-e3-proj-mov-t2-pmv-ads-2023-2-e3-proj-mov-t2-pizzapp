@@ -1,12 +1,12 @@
 import axios from "axios";
-
+import { enviroments } from "../enviroments/index";
 interface IUser {
   email: string;
   password: string;
 }
 
 export async function makeLogin({ email, password }: IUser) {
-  const url = "http://10.0.2.2:3000/users";
+  const url = `${enviroments.baseUrl}/users`;
   const users = await axios.get(url).then((response) => {
     return response.data;
   });
