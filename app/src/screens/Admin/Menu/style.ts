@@ -7,6 +7,9 @@ export const Page = styled(SafeAreaView)`
   padding: 24px;
 `;
 
+export const CreateGroup = styled.View`
+`;
+
 export const Item = styled.View`
   background-color: ${({ theme }) => theme.COLORS.YELLOW_300};
   flex-direction: row;

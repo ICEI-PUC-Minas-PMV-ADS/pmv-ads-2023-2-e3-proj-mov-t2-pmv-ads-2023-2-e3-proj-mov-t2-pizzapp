@@ -1,5 +1,6 @@
 import {
   Container,
+  CreateGroup,
   InputButton,
   Item,
   ItemText,
@@ -10,8 +11,7 @@ import {
 import { StraightHeader } from "@components/StraightHeader";
 import { Button } from "@components/Button";
 import { Input } from "@components/Input";
-
-import { View } from "react-native";
+import { Alert } from "react-native";
 import { useEffect, useState } from "react";
 import {
   IGroups,
@@ -24,12 +24,16 @@ export function MenuAdmin() {
   const [groups, setGroups] = useState<IGroups[]>([]);
 
   function handleAddGroup() {
+    if (!name) {
+      Alert.alert('Erro',"Nome do grupo não pode ser vazio");
+      return;
+    }
     createGroup(name).then((response) => {
       setGroups([...groups, response]);
       setName("");
     });
   }
-
+  
   useEffect(() => {
     getGroups().then((response) => {
       console.log(response);
@@ -40,7 +44,7 @@ export function MenuAdmin() {
     <Page>
       <StraightHeader admin />
       <Container>
-        <View>
+        <CreateGroup>
           <Texto>Criar Grupo</Texto>
           <InputButton>
             <Input
@@ -51,7 +55,7 @@ export function MenuAdmin() {
             onPress={handleAddGroup}
             />
           </InputButton>
-        </View>
+        </CreateGroup>
 
         <List
           data={groups}
