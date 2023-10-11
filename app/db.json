@@ -8,11 +8,29 @@
       "password": "123456"
     },
     {
-        "id": 2,
-        "name": "John",
-        "username": "iugorsette",
-        "email": "iugor@com.br",
-        "password": "123456"
-      }
+      "id": 2,
+      "name": "John",
+      "username": "iugorsette",
+      "email": "iugor@com.br",
+      "password": "123456"
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "name": "Pizzas"
+    },
+    {
+      "id": 2,
+      "name": "Bebidas"
+    },
+    {
+      "name": "Sobremesa",
+      "id": 3
+    },
+    {
+      "name": "Petiscos",
+      "id": 4
+    }
   ]
 }
