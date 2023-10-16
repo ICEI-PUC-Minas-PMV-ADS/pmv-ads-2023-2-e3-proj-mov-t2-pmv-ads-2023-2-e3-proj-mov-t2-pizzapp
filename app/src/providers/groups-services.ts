@@ -3,6 +3,14 @@ import { enviroments } from "../enviroments/index";
 export interface IGroups {
   id: number;
   name: string;
+  products: IProducts[];
+}
+export interface IProducts {
+  id: number;
+  name: string;
+  description: string;
+  price: number;
+  image: string;
 }
 
 export async function getGroups(): Promise<IGroups[]> {
