@@ -70,7 +70,6 @@ export function MenuAdmin() {
 
   useEffect(() => {
     getGroups().then((response) => {
-      console.log(response);
       setGroups(response);
     });
   }, []);

@@ -32,8 +32,6 @@ export function ProductAdmin({ route }: any) {
 
   useEffect(() => {
     getGroup(groupId).then((response) => {
-      console.log(groupId);
-      console.log(response);
       setGroup(response);
     });
   }, []);
@@ -61,13 +59,11 @@ export function ProductAdmin({ route }: any) {
 
     if (product.id) {
       editProductInGroup(newProduct).then((response) => {
-        console.log(response);
       });
       navigation.navigate("menuAdmin");
       return;
     }
     createProductInGroup(group.id, newProduct).then((response) => {
-      console.log(response);
     });
     navigation.navigate("menuAdmin");
     return;
