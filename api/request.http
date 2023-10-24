@@ -1,0 +1,26 @@
+### Get Groups
+GET http://localhost:3000/groups/1
+
+### Get Product
+GET http://localhost:3000/groups/2/products
+
+
+### Create Group    
+POST http://localhost:3000/groups
+Content-Type: application/json
+
+{
+    "name": "Pizzas Doces"
+}
+
+### Create Product
+POST http://localhost:3000/groups/2/products
+Content-Type: application/json
+
+{
+    "name": "Pizza de Chocolate",
+    "description": "Pizza de chocolate com morango",
+    "price": 20,
+    "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-doce-1.jpg",
+    "groupId": 2
+}

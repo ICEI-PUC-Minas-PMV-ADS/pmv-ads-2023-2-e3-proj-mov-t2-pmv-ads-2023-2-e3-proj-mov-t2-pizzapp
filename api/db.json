@@ -1,0 +1,55 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Iugor Sette",
+      "username": "iugorsette",
+      "email": "iugorsette@pucminas.com.br",
+      "password": "123456"
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "name": "Pizzas"
+    },
+    {
+      "name": "Pizzas Doces",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Pizza de Calabresa",
+      "description": "Pizza de Calabresa com queijo",
+      "price": 20,
+      "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+      "groupId": 1
+    },
+    {
+      "id": 2,
+      "name": "Pizza de Frango",
+      "description": "Pizza de Frango com queijo",
+      "price": 20,
+      "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+      "groupId": 1
+    },
+    {
+      "id": 3,
+      "name": "Pizza de Carne",
+      "description": "Pizza de Carne com queijo",
+      "price": 20,
+      "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+      "groupId": 1
+    },
+    {
+      "name": "Pizza de Chocolate",
+      "description": "Pizza de chocolate com morango",
+      "price": 20,
+      "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-doce-1.jpg",
+      "groupId": "2",
+      "id": 4
+    }
+  ]
+}
