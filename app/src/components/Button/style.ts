@@ -13,7 +13,11 @@ export const Container = styled(TouchableOpacity)<Props>`
     background-color: ${theme.COLORS.RED};
     color: ${theme.COLORS.YELLOW_300};
     font-size: ${theme.FONT_SIZE.XL}px;
-    width: ${size === "LARGE" ? 280 : 61}px;
+    width: ${
+    size === "LARGE" ? 280 : 
+    size === "MEDIUM" ? 160 : 
+    61
+    }px;
     height: 61px;
     border-radius: 10px;
     background-color: ${({ theme, type }) =>

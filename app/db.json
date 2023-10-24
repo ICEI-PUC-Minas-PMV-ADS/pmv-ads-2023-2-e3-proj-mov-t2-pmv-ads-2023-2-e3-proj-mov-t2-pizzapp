@@ -6,104 +6,100 @@
       "username": "iugorsette",
       "email": "iugorsette@pucminas.com.br",
       "password": "123456"
-    },
-    {
-      "id": 2,
-      "name": "John",
-      "username": "iugorsette",
-      "email": "iugor@com.br",
-      "password": "123456"
     }
   ],
   "groups": [
     {
       "id": 1,
-      "name": "Pizzas",
-      "products": [
-        {
-          "id": 1,
-          "name": "Pizza de Calabresa",
-          "description": "Pizza de Calabresa com queijo",
-          "price": 20,
-          "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg"
-        },
-        {
-          "id": 2,
-          "name": "Pizza de Frango",
-          "description": "Pizza de Frango com queijo",
-          "price": 20,
-          "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg"
-        },
-        {
-          "id": 3,
-          "name": "Pizza de Carne",
-          "description": "Pizza de Carne com queijo",
-          "price": 20,
-          "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg"
-        },
-        {
-          "id": 4,
-          "name": "Pizza de Bacon",
-          "description": "Pizza de Bacon com queijo",
-          "price": 20,
-          "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg"
-        },
-        {
-          "id": 5,
-          "name": "Pizza de Presunto",
-          "description": "Pizza de Presunto com queijo",
-          "price": 20,
-          "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg"
-        },
-        {
-          "id": 6,
-          "name": "Pizza de Queijo",
-          "description": "Pizza de Queijo com queijo",
-          "price": 20,
-          "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg"
-        }
-      ]
+      "name": "Pizzas"
     },
     {
-      "id": 2,
+      "name": "Pizzas Doces",
+      "id": 2
+    },
+    {
       "name": "Bebidas",
-      "products": [
-        {
-          "id": 1,
-          "name": "Coca-Cola",
-          "description": "Refrigerante de Cola",
-          "price": 5,
-          "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg"
-        },
-        {
-          "id": 2,
-          "name": "Guaraná",
-          "description": "Refrigerante de Guaraná",
-          "price": 5,
-          "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg"
-        }
-      ]
-    },
-    {
-      "name": "Sobremesa",
       "id": 3
     },
     {
-      "name": "Grupo teste",
+      "name": "Teste",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Pizza de Calabresa",
+      "description": "Pizza de Calabresa com queijo",
+      "price": 20,
+      "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+      "groupId": 1
+    },
+    {
+      "id": 2,
+      "name": "Pizza de Frango",
+      "description": "Pizza de Frango com queijo",
+      "price": 20,
+      "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+      "groupId": 1
+    },
+    {
+      "id": 3,
+      "name": "Pizza de Carne",
+      "description": "Pizza de Carne com queijo",
+      "price": 20,
+      "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+      "groupId": 1
+    },
+    {
+      "name": "Pizza de Chocolate",
+      "description": "Pizza de chocolate com morango",
+      "price": 22,
+      "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-doce-1.jpg",
+      "groupId": 2,
       "id": 4
     },
     {
-      "name": "Hamburguer",
       "id": 5,
-      "products": [
-        {
-          "id": 1,
-          "name": "X-Burguer",
-          "description": "Hamburguer com queijo",
-          "price": 20,
-          "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg"
-        }
-      ]
+      "name": "Pizza Portuguesa",
+      "description": "teste qualquer",
+      "price": "41,50",
+      "groupId": "1"
+    },
+    {
+      "id": 6,
+      "name": "teste PORTUGUESA",
+      "description": "www",
+      "price": "0"
+    },
+    {
+      "name": "Suco de maracuja",
+      "description": "suco de caxinha 250ml",
+      "price": "5,00",
+      "groupId": "3",
+      "id": 7
+    },
+    {
+      "name": "Pizza de Calabresa",
+      "description": "Pizza de Calabresa com queijo",
+      "price": "20",
+      "groupId": "1",
+      "id": 8
+    },
+    {
+      "name": "teste",
+      "description": "",
+      "price": "0",
+      "group": 1,
+      "groupId": "1",
+      "id": 9
+    },
+    {
+      "name": "teste 1",
+      "description": "",
+      "price": "0",
+      "groupId": "4",
+      "id": 10
     }
   ]
 }

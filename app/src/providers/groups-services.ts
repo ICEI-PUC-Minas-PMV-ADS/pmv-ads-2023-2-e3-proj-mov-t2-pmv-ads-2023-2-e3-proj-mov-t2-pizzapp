@@ -1,24 +1,26 @@
 import axios from "axios";
 import { enviroments } from "../enviroments/index";
 export interface IGroups {
-  id: number;
+  id: string;
   name: string;
-  products: IProducts[];
-}
-export interface IProducts {
-  id: number;
-  name: string;
-  description: string;
-  price: number;
-  image: string;
 }
 
 export async function getGroups(): Promise<IGroups[]> {
-  const url = `${enviroments.baseUrl}/groups`;
-  const groups = await axios.get(url).then((response) => {
+  const url = `${enviroments.baseUrl}/groups/`;
+  const group = await axios.get(url).then((response) => {
     return response.data;
   });
-  return groups;
+  return group;
+}
+
+export async function getGroup(id?: string): Promise<IGroups> {
+  const url = `${enviroments.baseUrl}/groups/${id}`;
+  const group = await axios.get(url).then((response) => {
+    return response.data;
+  });
+  const filtredGroup = group.filter((group: IGroups) => group.id == id);
+  return filtredGroup[0];
+
 }
 
 export async function createGroup(name: string): Promise<IGroups> {

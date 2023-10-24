@@ -20,6 +20,7 @@ export function AppRoutes(){
             
             <Screen name="chart" component={Home}/>
             <Screen name="order" component={Home}/>
+            <Screen name="productAdmin" component={ProductAdmin}/>
             </Navigator>
     )
 }

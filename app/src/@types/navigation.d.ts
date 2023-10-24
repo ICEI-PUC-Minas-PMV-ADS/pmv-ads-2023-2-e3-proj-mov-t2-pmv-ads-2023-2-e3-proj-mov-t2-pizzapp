@@ -10,7 +10,9 @@ export declare global {
       order: undefined;
       menuAdmin: undefined;
       productAdmin: {
-        product: IProducts;
+        product?: IProducts;
+        groupName?: string
+        group?: IGroups
       };
     }
   }

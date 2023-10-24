@@ -1,0 +1,6 @@
+{
+  "/api/*": "/$1",
+  "/:resource/:id/show": "/:resource/:id",
+  "/groups/:category": "/groups?category=:category",
+  "/articles?id=:id": "/groups/:id"
+}

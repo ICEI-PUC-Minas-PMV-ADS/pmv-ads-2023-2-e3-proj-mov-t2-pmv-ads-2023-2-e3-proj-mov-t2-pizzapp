@@ -27,20 +27,27 @@ import {
   getGroups,
 } from "../../../providers/groups-services";
 import { useNavigation } from "@react-navigation/native";
+import { IProducts, getProductsByGroup } from "../../../providers/product-services";
 
 export function MenuAdmin() {
   const [name, setName] = useState<string>("");
   const [groups, setGroups] = useState<IGroups[]>([]);
+  const [products, setProducts] = useState<any[]>([]);
 
   const [openModals, setOpenModals] = useState<string[]>([]);
 
   const navigation = useNavigation();
 
-  function createProduct() {
-    // navigation.navigate();
-    
+  function createProduct(id: string, product?: IProducts) {
+    navigation.navigate("productAdmin", {
+      group: groups.find((group) => group.id === id),
+      product,
+    });
   }
   function toggleModal(groupId: string) {
+    getProductsByGroup(groupId).then((response) => {
+      setProducts(response);
+    })
     setOpenModals((prevOpenModals) => {
       if (prevOpenModals.includes(groupId)) {
         return prevOpenModals.filter((id) => id !== groupId);
@@ -94,7 +101,11 @@ export function MenuAdmin() {
                     <IconButton>
                       <EditIcon />
                     </IconButton>
-                    <IconButton>
+                    <IconButton
+                      onPress={() => {
+                        createProduct(item.id);
+                      }}
+                    >
                       <PlusIcon />
                     </IconButton>
                   </ButtonContainer>
@@ -102,10 +113,12 @@ export function MenuAdmin() {
               </GroupButton>
               {openModals.includes(item.id) && (
                 <ProductList
-                  data={item.products}
+                  data={products}
                   keyExtractor={(item: any) => item.id}
                   renderItem={({ item }: any) => (
-                    <Product>
+                    <Product  onPress={() => {
+                      createProduct(item.id, item);
+                    }}>
                       <ProductText>{item.name}</ProductText>
                     </Product>
                   )}
