@@ -3,11 +3,14 @@ export declare global {
     interface RootParamList {
       home: undefined;
       homeClient: undefined;
-      homeAdmin: undefined;
+      menuClient: undefined; 
+      productClient: {
+        product?: IProducts;
+      };
       login: undefined;
-      menu: undefined;
       chart: undefined;
       order: undefined;
+      homeAdmin: undefined;
       menuAdmin: undefined;
       productAdmin: {
         product?: IProducts;

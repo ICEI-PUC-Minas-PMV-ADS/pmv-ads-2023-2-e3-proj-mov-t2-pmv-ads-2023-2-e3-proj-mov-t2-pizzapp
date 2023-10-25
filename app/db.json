@@ -31,7 +31,7 @@
       "id": 1,
       "name": "Pizza de Calabresa",
       "description": "Pizza de Calabresa com queijo",
-      "price": 20,
+      "price": "32,80",
       "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
       "groupId": 1
     },
@@ -39,7 +39,7 @@
       "id": 2,
       "name": "Pizza de Frango",
       "description": "Pizza de Frango com queijo",
-      "price": 20,
+      "price": "37,40",
       "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
       "groupId": 1
     },
@@ -47,14 +47,14 @@
       "id": 3,
       "name": "Pizza de Carne",
       "description": "Pizza de Carne com queijo",
-      "price": 20,
+      "price": "20,00",
       "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
       "groupId": 1
     },
     {
       "name": "Pizza de Chocolate",
       "description": "Pizza de chocolate com morango",
-      "price": 22,
+      "price": "22,00",
       "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-doce-1.jpg",
       "groupId": 2,
       "id": 4
@@ -64,13 +64,13 @@
       "name": "Pizza Portuguesa",
       "description": "teste qualquer",
       "price": "41,50",
-      "groupId": "1"
+      "groupId": "1,00"
     },
     {
       "id": 6,
       "name": "teste PORTUGUESA",
       "description": "www",
-      "price": "0"
+      "price": "10,00"
     },
     {
       "name": "Suco de maracuja",
@@ -82,14 +82,14 @@
     {
       "name": "Pizza de Calabresa",
       "description": "Pizza de Calabresa com queijo",
-      "price": "20",
+      "price": "20,00",
       "groupId": "1",
       "id": 8
     },
     {
       "name": "teste",
       "description": "",
-      "price": "0",
+      "price": "50,00",
       "group": 1,
       "groupId": "1",
       "id": 9
@@ -97,7 +97,7 @@
     {
       "name": "teste 1",
       "description": "",
-      "price": "0",
+      "price": "40,00",
       "groupId": "4",
       "id": 10
     }

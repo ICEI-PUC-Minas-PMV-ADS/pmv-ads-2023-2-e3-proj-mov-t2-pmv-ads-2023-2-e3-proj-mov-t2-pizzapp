@@ -10,8 +10,8 @@ export interface IProducts {
   groupId: string
 }
 
-export async function getProducts(id?:string): Promise<IProducts[]> {
-  const url = `${enviroments.baseUrl}/products/${id}`;
+export async function getProducts(): Promise<IProducts[]> {
+  const url = `${enviroments.baseUrl}/products/`;
   const products = await axios.get(url).then((response) => {
     return response.data;
   });
