@@ -60,13 +60,6 @@
       "id": 4
     },
     {
-      "id": 5,
-      "name": "Pizza Portuguesa",
-      "description": "teste qualquer",
-      "price": "41,50",
-      "groupId": "1,00"
-    },
-    {
       "id": 6,
       "name": "teste PORTUGUESA",
       "description": "www",
@@ -100,6 +93,26 @@
       "price": "40,00",
       "groupId": "4",
       "id": 10
+    }
+  ],
+  "chart": [
+    {
+      "id": 2,
+      "name": "Pizza de Frango",
+      "description": "Pizza de Frango com queijo",
+      "price": "37,40",
+      "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+      "groupId": 1,
+      "quantity": 10
+    },
+    {
+      "id": 1,
+      "name": "Pizza de Calabresa",
+      "description": "Pizza de Calabresa com queijo",
+      "price": "32,80",
+      "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+      "groupId": 1,
+      "quantity": 2
     }
   ]
 }

@@ -7,6 +7,7 @@ export interface IProducts {
   description: string;
   price: number;
   image: string;
+  quantity: number;
   groupId: string
 }
 

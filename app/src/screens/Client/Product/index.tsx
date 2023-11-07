@@ -16,7 +16,8 @@ import { useEffect, useState } from "react";
 import { StraightHeader } from "@components/StraightHeader";
 import { useNavigation } from "@react-navigation/native";
 import { IGroups, getGroup } from "../../../providers/groups-services";
-import { Image } from "react-native";
+import { addProductToChart } from "../../../providers/chart-services";
+import { Alert, Image } from "react-native";
 
 export function ProductClient({ route }: any) {
   const navigation = useNavigation();
@@ -36,25 +37,13 @@ export function ProductClient({ route }: any) {
   }, []);
 
   function handleCancel() {
-    navigation.navigate("menuAdmin");
+    navigation.navigate("menuClient");
   }
 
   function handleAddProduct() {
-    // const newProduct = {
-    //   id: product.id,
-    //   name,
-    //   description,
-    //   price,
-    //   groupId: product.groupId ? product.groupId : group.id,
-    // };
-    // if (product.id) {
-    //   editProductInGroup(newProduct).then((response) => {});
-    //   navigation.navigate("menuAdmin");
-    //   return;
-    // }
-    // createProductInGroup(group.id, newProduct).then((response) => {});
-    // navigation.navigate("menuAdmin");
-    // return;
+    const message =  addProductToChart(product);
+    console.log(message);
+    // Alert.alert(message);
   }
 
   return (
