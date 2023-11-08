@@ -13,20 +13,17 @@ import {
   Texto,
 } from "./style";
 import { StraightHeader } from "@components/StraightHeader";
-import { Button } from "@components/Button";
-import { Input } from "@components/Input";
-import { Alert, Image, Text, View } from "react-native";
+import { Image, View } from "react-native";
 import { useEffect, useState } from "react";
 import {
   IGroups,
-  createGroup,
   getGroups,
-} from "../../../providers/groups-services";
+} from "@providers/groups-services";
 import { useNavigation } from "@react-navigation/native";
 import {
   IProducts,
   getProductsByGroup,
-} from "../../../providers/product-services";
+} from "@providers/product-services";
 
 export function MenuClient() {
   const [name, setName] = useState<string>("");

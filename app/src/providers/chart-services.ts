@@ -28,9 +28,9 @@ export async function addProductToChart(product: IProducts) {
   return await axios.post(url, product).then((response) => response.data);
 }
 
-export function removeProductFromChart(product: IProducts) {
+export async function removeProductFromChart(product: IProducts) {
   const url = `${enviroments.baseUrl}/chart/${product.id}`;
   return axios.delete(url).then((response) => response.data);
 }
 
-export function clearChart() {}
+export async function clearChart() {}

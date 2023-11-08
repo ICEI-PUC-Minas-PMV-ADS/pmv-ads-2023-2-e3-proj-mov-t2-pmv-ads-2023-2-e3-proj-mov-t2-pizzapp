@@ -13,32 +13,34 @@ import {
 import { Button } from "@components/Button";
 import { StraightHeader } from "@components/StraightHeader";
 import { useNavigation } from "@react-navigation/native";
-import { useEffect, useState } from "react";
-import {
-  getChart,
-  removeProductFromChart,
-} from "../../../providers/chart-services";
-import { IProducts } from "../../../providers/product-services";
+import { useContext, useEffect, useState } from "react";
+import { getChart, removeProductFromChart } from "@providers/chart-services";
 import { Alert } from "react-native";
+import { IProducts } from "@providers/product-services";
+import { CustomerContext } from "@context/customer";
+import { createOrder } from "@providers/order-services";
 
-export function Chart({ route }: any) {
-  const navigation = useNavigation();
+export function Chart() {
   const [chart, setChart] = useState<IProducts[]>([]);
-  const [total, setTotal] = useState<string>('0,00');
+  const [total, setTotal] = useState<string>("0,00");
   useEffect(() => {
     sumTotal();
     getChart().then((response) => {
       setChart(response);
     });
-  }, []);
+  }, [chart]);
 
-
-  function sumTotal (){
+  function sumTotal() {
     let sum = 0;
     chart.forEach((item) => {
       sum += parseFloat(item.price);
     });
     setTotal(String(sum.toFixed(2).replace(".", ",")));
+  }
+
+  function handleOrder() {
+    createOrder(chart);
+    Alert.alert("Pedido realizado com sucesso!");
   }
 
   function handleDeleteProduct(product: IProducts) {
@@ -60,7 +62,6 @@ export function Chart({ route }: any) {
                 setChart((prevChart) => {
                   return prevChart.filter((item) => item.id !== product.id);
                 });
-                sumTotal();
               }
             }),
         },
@@ -97,15 +98,15 @@ export function Chart({ route }: any) {
       <Total>
         <TotalText>Total</TotalText>
         <PriceText size={32} color="primary">
-              <PriceText size={20}>R$:</PriceText>
-              {total.split(",")[0]}
-              <PriceText size={20} color="primary">
-                ,{total.split(",")[1]}
-              </PriceText>
-            </PriceText>
+          <PriceText size={20}>R$:</PriceText>
+          {total.split(",")[0]}
+          <PriceText size={20} color="primary">
+            ,{total.split(",")[1]}
+          </PriceText>
+        </PriceText>
       </Total>
       <ButtonContainer>
-        <Button type="SECONDARY" title="Fechar Pedido" />
+        <Button type="SECONDARY" title="Fechar Pedido" onPress={handleOrder} />
       </ButtonContainer>
     </Page>
   );

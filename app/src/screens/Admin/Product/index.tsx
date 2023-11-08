@@ -1,7 +1,7 @@
 import {
   createProductInGroup,
   editProductInGroup,
-} from "../../../providers/product-services";
+} from "@providers/product-services";
 import {
   ButtonContainer,
   CreateGroup,
@@ -17,7 +17,7 @@ import { Button } from "@components/Button";
 import { useEffect, useState } from "react";
 import { StraightHeader } from "@components/StraightHeader";
 import { useNavigation } from "@react-navigation/native";
-import { IGroups, getGroup } from "../../../providers/groups-services";
+import { IGroups, getGroup } from "@providers/groups-services";
 
 export function ProductAdmin({ route }: any) {
   const navigation = useNavigation();
@@ -37,6 +37,7 @@ export function ProductAdmin({ route }: any) {
   }, []);
 
   const [name, setName] = useState<string>(product.name ? product.name : "");
+  const [image, setImage] = useState<string>(product.image ? product.image : "");
   const [description, setDescription] = useState<string>(
     product.description ? product.description : ""
   );
@@ -74,9 +75,6 @@ export function ProductAdmin({ route }: any) {
       <StraightHeader admin />
       <Form>
         <Texto>Adicionando {group?.name} </Texto>
-        <InputImage>
-          <ImageIcon />
-        </InputImage>
         <CreateGroup>
           <Texto>Nome do Item</Texto>
           <InputButton>
@@ -95,6 +93,13 @@ export function ProductAdmin({ route }: any) {
           <Texto>Preço</Texto>
           <InputButton>
             <Input value={price} onChangeText={setPrice} />
+          </InputButton>
+        </CreateGroup>
+
+        <CreateGroup>
+          <Texto>Url da imagem</Texto>
+          <InputButton>
+            <Input value={image} onChangeText={setImage} />
           </InputButton>
         </CreateGroup>
       </Form>

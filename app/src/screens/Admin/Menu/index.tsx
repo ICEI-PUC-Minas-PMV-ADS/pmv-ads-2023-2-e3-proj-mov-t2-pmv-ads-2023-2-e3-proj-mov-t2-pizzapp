@@ -25,9 +25,9 @@ import {
   IGroups,
   createGroup,
   getGroups,
-} from "../../../providers/groups-services";
+} from "@providers/groups-services";
+import { IProducts, getProductsByGroup } from "@providers/product-services";
 import { useNavigation } from "@react-navigation/native";
-import { IProducts, getProductsByGroup } from "../../../providers/product-services";
 
 export function MenuAdmin() {
   const [name, setName] = useState<string>("");

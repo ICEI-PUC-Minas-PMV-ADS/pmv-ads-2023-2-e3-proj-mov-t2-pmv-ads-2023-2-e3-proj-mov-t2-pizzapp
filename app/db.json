@@ -103,7 +103,7 @@
       "price": "37,40",
       "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
       "groupId": 1,
-      "quantity": 10
+      "quantity": 11
     },
     {
       "id": 1,
@@ -113,6 +113,30 @@
       "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
       "groupId": 1,
       "quantity": 2
+    }
+  ],
+  "orders": [
+    {
+      "0": {
+        "id": 2,
+        "name": "Pizza de Frango",
+        "description": "Pizza de Frango com queijo",
+        "price": "37,40",
+        "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+        "groupId": 1,
+        "quantity": 11
+      },
+      "1": {
+        "id": 1,
+        "name": "Pizza de Calabresa",
+        "description": "Pizza de Calabresa com queijo",
+        "price": "32,80",
+        "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+        "groupId": 1,
+        "quantity": 2
+      },
+      "status": "pending",
+      "id": 1
     }
   ]
 }
