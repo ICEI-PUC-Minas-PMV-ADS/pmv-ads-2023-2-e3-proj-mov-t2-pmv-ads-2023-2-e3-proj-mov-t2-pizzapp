@@ -1,4 +1,8 @@
 # Registro de Testes de Usabilidade
+## Teste de fluxo do cliente
+[Uploading Teste de fluxo do Cliente .webm…]()
+## Teste de Fluxo Adicionando novo produto
+[Uploading Teste adicionar novo Produto.webm…]()
 
 ## Introdução:
 
