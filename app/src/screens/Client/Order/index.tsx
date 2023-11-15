@@ -1,4 +1,3 @@
-import { useNavigation } from "@react-navigation/native";
 import {
   OrderItem,
   OrderItemText,
@@ -10,18 +9,23 @@ import {
 } from "./style";
 import { StraightHeader } from "@components/StraightHeader";
 import { useContext, useEffect, useState } from "react";
-import { getOrderByName } from "@providers/order-services";
+import { IOrder, getOrderByName } from "@providers/order-services";
 import { CustomerContext } from "@context/customer";
-import { Text } from "react-native";
 import { TotalComponent } from "@components/Total";
 export function Order() {
-  const navigation = useNavigation();
-  const { name, table } = useContext(CustomerContext)!;
+  const { name } = useContext(CustomerContext);
 
-  const [order, setOrder] = useState<any[]>([]);
+  const [order, setOrder] = useState<IOrder>({
+    id: "",
+    name: "",
+    table: "",
+    status: "",
+    total: "",
+    products: [],
+  });
 
   useEffect(() => {
-    getOrderByName(name).then((response) => {
+    getOrderByName(name!).then((response) => {
       console.log(response);
       setOrder(response);
     });

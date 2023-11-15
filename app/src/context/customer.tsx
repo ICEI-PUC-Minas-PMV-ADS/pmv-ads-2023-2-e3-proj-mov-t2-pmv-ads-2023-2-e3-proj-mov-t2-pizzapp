@@ -7,7 +7,7 @@ type Customer = {
   handleChangeName: (name: string) => void;
 };
 
-export const CustomerContext = createContext<Customer | null>({
+export const CustomerContext = createContext<Customer>({
   table: '',
   name: '',
   handleChangeTable: () => {},
@@ -19,7 +19,6 @@ export const CustomerProvider = ({ children }: { children: React.ReactNode }) =>
   const [name, setName] = useState<string>();
 
   function handleChangeName (value:string) {
-    console.log('context: ',value);
     setName(value);
   }
 
