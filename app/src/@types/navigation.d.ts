@@ -9,7 +9,8 @@ export declare global {
       };
       login: undefined;
       chart: undefined;
-      order: undefined;
+      orderClient: undefined;
+      orderAdmin: undefined;
       homeAdmin: undefined;
       menuAdmin: undefined;
       productAdmin: {

@@ -12,7 +12,7 @@ import { useContext, useEffect, useState } from "react";
 import { IOrder, getOrderByName } from "@providers/order-services";
 import { CustomerContext } from "@context/customer";
 import { TotalComponent } from "@components/Total";
-export function Order() {
+export function OrderClient() {
   const { name } = useContext(CustomerContext);
 
   const [order, setOrder] = useState<IOrder>({

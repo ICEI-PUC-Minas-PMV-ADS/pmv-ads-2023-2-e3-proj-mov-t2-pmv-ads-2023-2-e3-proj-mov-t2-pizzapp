@@ -41,18 +41,18 @@ export function Chart() {
     });
   }, [chart]);
 
-  function handleAddProduct(product) {
+  function handleAddProduct(product: IProducts) {
     const message =  addProductToChart(product);
   }
 
-  function handleRemoveProduct(product) {
+  function handleRemoveProduct(product: IProducts) {
     removeOneProductFromChart(product);
   }
 
   function sumTotal() {
     let sum = 0;
     chart.forEach((item) => {
-      item.price = item.price.replace(",", ".");
+      item.price = item.price?.replace(",", ".");
       sum += parseFloat(item.price)* item.quantity;
     });
     setTotal(String(sum.toFixed(2).replace(".", ",")));
@@ -76,7 +76,7 @@ export function Chart() {
         },
         {
           text: "Acompanhar pedido",
-          onPress: () => navigation.navigate("order"),
+          onPress: () => navigation.navigate("orderClient"),
         },
       ]
     );

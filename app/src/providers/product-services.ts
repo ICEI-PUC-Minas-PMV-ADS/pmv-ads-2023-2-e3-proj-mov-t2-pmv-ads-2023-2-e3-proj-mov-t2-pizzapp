@@ -5,7 +5,7 @@ export interface IProducts {
   id: number;
   name: string;
   description: string;
-  price: number;
+  price: string;
   image: string;
   quantity: number;
   groupId: string

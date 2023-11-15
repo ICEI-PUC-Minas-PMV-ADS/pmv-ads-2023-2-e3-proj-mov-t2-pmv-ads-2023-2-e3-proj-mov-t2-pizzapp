@@ -8,8 +8,7 @@ import { useNavigation } from "@react-navigation/native";
 export function HomeAdmin() {
   const navigation = useNavigation();
   function goToOrder() {
-    Alert.alert("Pedidos", "Pedidos em construção");
-    // navigation.navigate("order");
+    navigation.navigate("orderAdmin");
   }
 
   function goToMenu() {
