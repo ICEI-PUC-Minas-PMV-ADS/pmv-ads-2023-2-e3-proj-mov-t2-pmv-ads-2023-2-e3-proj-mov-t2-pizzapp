@@ -38,8 +38,6 @@ export function ProductClient({ route }: any) {
 
   function handleAddProduct() {
     const message =  addProductToChart(product);
-    console.log(message);
-    // Alert.alert(message);
   }
 
   return (

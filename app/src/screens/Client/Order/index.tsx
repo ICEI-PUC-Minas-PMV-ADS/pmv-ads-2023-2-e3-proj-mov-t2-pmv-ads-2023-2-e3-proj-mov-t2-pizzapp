@@ -26,7 +26,6 @@ export function Order() {
 
   useEffect(() => {
     getOrderByName(name!).then((response) => {
-      console.log(response);
       setOrder(response);
     });
   }, []);

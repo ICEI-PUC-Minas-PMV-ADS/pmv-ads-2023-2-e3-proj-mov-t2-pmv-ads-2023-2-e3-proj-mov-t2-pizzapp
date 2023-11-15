@@ -18,9 +18,7 @@ export function HomeClient() {
   } = useContext(CustomerContext)!;
   
   const changeName = (value:string) => {
-    console.log(value);
     handleChangeName(value);
-    console.log({name,table});
   }
 
   const changeTable = (value:string) => {
@@ -28,9 +26,7 @@ export function HomeClient() {
   }
   
   const navigation = useNavigation();
-  useEffect(() => {
-    console.log({name,table});
-  }, []);
+  
   function building() {
     navigation.navigate("menuClient");
   }

@@ -83,7 +83,6 @@ export function Chart() {
   }
 
   function handleDeleteProduct(product: IProducts) {
-    console.log(product);
     Alert.alert(
       "Remover produto",
       `Deseja remover o ${product.name} do carrinho?`,
