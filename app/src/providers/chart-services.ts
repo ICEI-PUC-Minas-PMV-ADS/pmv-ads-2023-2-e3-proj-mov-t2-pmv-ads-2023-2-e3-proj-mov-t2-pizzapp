@@ -28,6 +28,23 @@ export async function addProductToChart(product: IProducts) {
   return await axios.post(url, product).then((response) => response.data);
 }
 
+export async function removeOneProductFromChart(product: IProducts) {
+  const chart = await getChart();
+  const productExists = chart.find(
+    (item: IProducts) => item.name === product.name
+  );
+  if (productExists && productExists.quantity > 1) {
+    productExists.quantity -= 1;
+    const url = `${enviroments.baseUrl}/chart/${productExists.id}`;
+    const chart = await axios
+      .put(url,  productExists )
+      .then((response) => response.data);
+    return chart;
+  }
+  const url = `${enviroments.baseUrl}/chart/${product.id}`;
+  return axios.delete(url).then((response) => response.data);
+}
+
 export async function removeProductFromChart(product: IProducts) {
   const url = `${enviroments.baseUrl}/chart/${product.id}`;
   return axios.delete(url).then((response) => response.data);

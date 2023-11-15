@@ -24,6 +24,10 @@
     {
       "name": "Teste",
       "id": 4
+    },
+    {
+      "name": "Teste1",
+      "id": 5
     }
   ],
   "products": [
@@ -93,18 +97,16 @@
       "price": "40,00",
       "groupId": "4",
       "id": 10
+    },
+    {
+      "name": "nome do item",
+      "description": "qwe",
+      "price": "21",
+      "groupId": "5",
+      "id": 11
     }
   ],
   "chart": [
-    {
-      "id": 2,
-      "name": "Pizza de Frango",
-      "description": "Pizza de Frango com queijo",
-      "price": "37,40",
-      "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
-      "groupId": 1,
-      "quantity": 11
-    },
     {
       "id": 1,
       "name": "Pizza de Calabresa",
@@ -112,7 +114,15 @@
       "price": "32,80",
       "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
       "groupId": 1,
-      "quantity": 2
+      "quantity": 1
+    },
+    {
+      "name": "Suco de maracuja",
+      "description": "suco de caxinha 250ml",
+      "price": "5,00",
+      "groupId": "3",
+      "id": 7,
+      "quantity": 1
     }
   ],
   "orders": [
@@ -137,6 +147,165 @@
       },
       "status": "pending",
       "id": 1
+    },
+    {
+      "0": {
+        "id": 1,
+        "name": "Pizza de Calabresa",
+        "description": "Pizza de Calabresa com queijo",
+        "price": "32.80",
+        "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+        "groupId": 1,
+        "quantity": 2
+      },
+      "1": {
+        "name": "Suco de maracuja",
+        "description": "suco de caxinha 250ml",
+        "price": "5.00",
+        "groupId": "3",
+        "id": 7,
+        "quantity": 1
+      },
+      "status": "pending",
+      "id": 2
+    },
+    {
+      "0": {
+        "id": 1,
+        "name": "Pizza de Calabresa",
+        "description": "Pizza de Calabresa com queijo",
+        "price": "32.80",
+        "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+        "groupId": 1,
+        "quantity": 2
+      },
+      "1": {
+        "name": "Suco de maracuja",
+        "description": "suco de caxinha 250ml",
+        "price": "5.00",
+        "groupId": "3",
+        "id": 7,
+        "quantity": 2
+      },
+      "status": "pending",
+      "id": 3
+    },
+    {
+      "0": {
+        "id": 1,
+        "name": "Pizza de Calabresa",
+        "description": "Pizza de Calabresa com queijo",
+        "price": "32.80",
+        "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+        "groupId": 1,
+        "quantity": 1
+      },
+      "1": {
+        "name": "Suco de maracuja",
+        "description": "suco de caxinha 250ml",
+        "price": "5.00",
+        "groupId": "3",
+        "id": 7,
+        "quantity": 1
+      },
+      "name": "Iugor",
+      "table": "7",
+      "status": "pending",
+      "id": 4
+    },
+    {
+      "0": {
+        "id": 1,
+        "name": "Pizza de Calabresa",
+        "description": "Pizza de Calabresa com queijo",
+        "price": "32.80",
+        "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+        "groupId": 1,
+        "quantity": 1
+      },
+      "1": {
+        "name": "Suco de maracuja",
+        "description": "suco de caxinha 250ml",
+        "price": "5.00",
+        "groupId": "3",
+        "id": 7,
+        "quantity": 1
+      },
+      "name": "Iugor",
+      "table": "7",
+      "status": "pending",
+      "id": 5
+    },
+    {
+      "0": {
+        "id": 1,
+        "name": "Pizza de Calabresa",
+        "description": "Pizza de Calabresa com queijo",
+        "price": "32.80",
+        "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+        "groupId": 1,
+        "quantity": 1
+      },
+      "1": {
+        "name": "Suco de maracuja",
+        "description": "suco de caxinha 250ml",
+        "price": "5.00",
+        "groupId": "3",
+        "id": 7,
+        "quantity": 1
+      },
+      "name": "qwee",
+      "table": "9",
+      "status": "pending",
+      "id": 6
+    },
+    {
+      "0": {
+        "id": 1,
+        "name": "Pizza de Calabresa",
+        "description": "Pizza de Calabresa com queijo",
+        "price": "32.80",
+        "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+        "groupId": 1,
+        "quantity": 1
+      },
+      "1": {
+        "name": "Suco de maracuja",
+        "description": "suco de caxinha 250ml",
+        "price": "5.00",
+        "groupId": "3",
+        "id": 7,
+        "quantity": 1
+      },
+      "name": "Teste",
+      "table": "7",
+      "status": "pending",
+      "id": 7
+    },
+    {
+      "products": [
+        {
+          "id": 1,
+          "name": "Pizza de Calabresa",
+          "description": "Pizza de Calabresa com queijo",
+          "price": "32,80",
+          "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+          "groupId": 1,
+          "quantity": 1
+        },
+        {
+          "name": "Suco de maracuja",
+          "description": "suco de caxinha 250ml",
+          "price": "5,00",
+          "groupId": "3",
+          "id": 7,
+          "quantity": 1
+        }
+      ],
+      "name": "Teste",
+      "table": "7",
+      "status": "pending",
+      "id": 8
     }
   ]
 }

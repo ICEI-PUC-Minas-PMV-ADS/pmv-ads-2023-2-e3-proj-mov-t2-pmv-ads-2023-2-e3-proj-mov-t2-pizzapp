@@ -5,6 +5,7 @@ import { ProductAdmin } from '@screens/Admin/Product';
 import { Chart } from '@screens/Client/Chart';
 import { HomeClient } from '@screens/Client/Home';
 import { MenuClient } from '@screens/Client/Menu';
+import { Order } from '@screens/Client/Order';
 import { ProductClient } from '@screens/Client/Product';
 import { Home } from '@screens/Home';
 import { Login } from '@screens/Login';
@@ -26,7 +27,7 @@ export function AppRoutes(){
             <Screen name="productAdmin" component={ProductAdmin}/>
             
             <Screen name="chart" component={Chart}/>
-            <Screen name="order" component={Home}/>
+            <Screen name="order" component={Order}/>
             </Navigator>
     )
 }

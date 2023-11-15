@@ -10,6 +10,12 @@ export async function getOrders() {
   return orders;
 }
 
+export async function getOrderByName(name: string) {
+  const url = `${enviroments.baseUrl}/orders`;
+  const order = await axios.get(url).then((response) => response.data);
+  return order.find((item: any) => item.name === name);
+}
+
 export async function createOrder(chart: any) {
     const url = `${enviroments.baseUrl}/orders`;
     const order = {...chart, status: 'pending'}

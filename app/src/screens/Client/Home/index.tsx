@@ -1,38 +1,56 @@
-import { ThemeProvider, useNavigation } from "@react-navigation/native";
+import { useNavigation } from "@react-navigation/native";
 
 import { Container, Page } from "./style";
 
 import { Header } from "@components/Header";
 import { Button } from "@components/Button";
 import { Input } from "@components/Input";
+
+import { useContext, useEffect } from "react";
 import { CustomerContext } from "@context/customer";
-import { useContext, useEffect, useState } from "react";
 
 export function HomeClient() {
-  const [name, setName] = useState<string>("");
-  const [table, setTable] = useState<string>("");
+  const {
+    name,
+    table,
+    handleChangeName,
+    handleChangeTable,
+  } = useContext(CustomerContext)!;
+  
+  const changeName = (value:string) => {
+    console.log(value);
+    handleChangeName(value);
+    console.log({name,table});
+  }
+
+  const changeTable = (value:string) => {
+   handleChangeTable(value);
+  }
+  
   const navigation = useNavigation();
+  useEffect(() => {
+    console.log({name,table});
+  }, []);
   function building() {
     navigation.navigate("menuClient");
   }
   return (
-    <CustomerContext.Provider value={{ name, table }}>
+    <CustomerContext.Provider value={({name,table,handleChangeName,handleChangeTable})}>
       <Page>
         <Header showBackButton />
         <Container>
           <Input
             placeholder="Informe o seu nome"
             autoCorrect={false}
-            returnKeyType="next"
-            onChangeText={(text) => setName(text)}
+            returnKeyType="next"          
+            onChangeText={changeName}
           />
           <Input
             placeholder="Informe a sua mesa"
             autoCorrect={false}
             keyboardType="numeric"
             returnKeyType="done"
-            onChangeText={(text) => setTable(text)}
-            
+            onChangeText={changeTable}
           />
           <Button title="Ver Cardápio" onPress={building} />
         </Container>
