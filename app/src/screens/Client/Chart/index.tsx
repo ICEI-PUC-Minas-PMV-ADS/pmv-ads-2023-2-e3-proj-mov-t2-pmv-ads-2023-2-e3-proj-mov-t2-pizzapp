@@ -42,9 +42,7 @@ export function Chart() {
   }, [chart]);
 
   function handleAddProduct(product) {
-    console.log(product);
     const message =  addProductToChart(product);
-    console.log(message);
   }
 
   function handleRemoveProduct(product) {
@@ -61,7 +59,12 @@ export function Chart() {
   }
 
   function handleOrder() {
-    createOrder({products:chart, name:name, table: table})
+    createOrder({
+      products:chart, 
+      name:name, 
+      table: table,
+      total: total
+    })
     Alert.alert(
       "Pedido Realizado",
       `Aguarde enquanto a cozinha prepara o seu pedido`,

@@ -4,7 +4,7 @@ import styled from "styled-components/native";
 export const Page = styled(SafeAreaView)`
   flex: 1;
   background-color: ${({ theme }) => theme.COLORS.YELLOW_500};
-    padding: 12px 0 ;
+  padding: 12px 0;
 `;
 
 export const OrderList = styled.FlatList`
@@ -13,27 +13,27 @@ export const OrderList = styled.FlatList`
 `;
 
 export const OrderItem = styled.View`
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 0;
-    `;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+`;
 
 export const OrderItemText = styled.Text`
-    font-weight: bold;
-    color: ${({ theme }) => theme.COLORS.RED_DARK};
-    font-size: ${({ theme }) => theme.FONT_SIZE.LG}px;
-    padding: 0 16px;
-    border-radius: 6px;
-    `;
+  font-weight: bold;
+  color: ${({ theme }) => theme.COLORS.RED_DARK};
+  font-size: ${({ theme }) => theme.FONT_SIZE.LG}px;
+  padding: 0 16px;
+  border-radius: 6px;
+`;
 
 export const OrderItemTextPrice = styled.Text`
-    font-weight: bold;
-    color: ${({ theme }) => theme.COLORS.RED_DARK};
-    font-size: ${({ theme }) => theme.FONT_SIZE.LG}px;
-    padding: 0 16px;
-    border-radius: 6px;
-    `;
+  font-weight: bold;
+  color: ${({ theme }) => theme.COLORS.RED_DARK};
+  font-size: ${({ theme }) => theme.FONT_SIZE.LG}px;
+  padding: 0 16px;
+  border-radius: 6px;
+`;
 
 export const OrderTitle = styled.Text`
   background-color: ${({ theme }) => theme.COLORS.RED};
@@ -46,4 +46,31 @@ export const OrderTitle = styled.Text`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+`;
+
+export const QuantityText = styled.Text`
+  font-weight: bold;
+  color: ${({ theme }) => theme.COLORS.RED_DARK};
+  font-size: ${({ theme }) => theme.FONT_SIZE.LG}px;
+  padding: 0 4px;
+  border-radius: 6px;
+`;
+
+export const PriceText = styled.Text<{ size: number; color?: "primary" }>`
+  font-weight: bold;
+  color: ${({ theme, color }) =>
+    color === "primary" ? theme.COLORS.RED_DARK : theme.COLORS.LIME_800};
+  font-size: ${({ size }) => size}px;
+  padding: 0 8px;
+  border-radius: 6px;
+`;
+
+export const StatusText = styled.Text<{ color?: "green" | "red" }>`
+  font-weight: bold;
+  text-align: center;
+  color: ${({ theme, color }) =>
+    color === "red" ? theme.COLORS.RED_DARK : theme.COLORS.LIME_800};
+  font-size: ${({ theme }) => theme.FONT_SIZE.XL}px;
+  padding: 16px;
+  border-radius: 6px;
 `;

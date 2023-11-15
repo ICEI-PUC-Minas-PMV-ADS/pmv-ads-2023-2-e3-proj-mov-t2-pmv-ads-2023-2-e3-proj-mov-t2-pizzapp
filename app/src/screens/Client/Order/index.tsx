@@ -5,18 +5,18 @@ import {
   OrderList,
   OrderTitle,
   Page,
+  PriceText,
+  StatusText,
 } from "./style";
 import { StraightHeader } from "@components/StraightHeader";
 import { useContext, useEffect, useState } from "react";
 import { getOrderByName } from "@providers/order-services";
 import { CustomerContext } from "@context/customer";
 import { Text } from "react-native";
+import { TotalComponent } from "@components/Total";
 export function Order() {
   const navigation = useNavigation();
-  const {
-    name,
-    table,
-  } = useContext(CustomerContext)!;
+  const { name, table } = useContext(CustomerContext)!;
 
   const [order, setOrder] = useState<any[]>([]);
 
@@ -30,20 +30,30 @@ export function Order() {
   return (
     <Page>
       <StraightHeader />
-      <OrderTitle>Meus Pedidos</OrderTitle>
-      <Text>{name}</Text>
-      {/* <Text>{order}</Text> */}
-
+      <OrderTitle>Pedidos de {name}</OrderTitle>
       <OrderList
-        data={order}
+        data={order.products}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
-          <OrderItem
-          >
-            <OrderItemText>{item.status}</OrderItemText>
+          <OrderItem>
+            <OrderItemText>{item.name}</OrderItemText>
+            <PriceText size={32} color="primary">
+              <PriceText size={20}>R$:</PriceText>
+              {item.price.split(".")[0]}
+              <PriceText size={20} color="primary">
+                ,{item.price.split(".")[1]}
+                {` x `}
+                {item.quantity}
+              </PriceText>
+            </PriceText>
           </OrderItem>
         )}
       />
+      <StatusText>
+        Status:
+        <StatusText color="red">{' '}{order.status}</StatusText>
+      </StatusText>
+      <TotalComponent total={order.total} />
     </Page>
   );
 }

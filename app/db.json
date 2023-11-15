@@ -22,12 +22,12 @@
       "id": 3
     },
     {
-      "name": "Teste",
-      "id": 4
+      "name": "Sobremesas",
+      "id": 6
     },
     {
-      "name": "Teste1",
-      "id": 5
+      "name": "Hamburguer",
+      "id": 7
     }
   ],
   "products": [
@@ -64,15 +64,10 @@
       "id": 4
     },
     {
-      "id": 6,
-      "name": "teste PORTUGUESA",
-      "description": "www",
-      "price": "10,00"
-    },
-    {
       "name": "Suco de maracuja",
-      "description": "suco de caxinha 250ml",
-      "price": "5,00",
+      "description": "suco natural da fruta do maracuja 300ml",
+      "image": "https://maissaborgranjalisboa.onezap.link/wp-content/uploads/2022/03/maracuja-500x500.jpg",
+      "price": "8,00",
       "groupId": "3",
       "id": 7
     },
@@ -84,202 +79,275 @@
       "id": 8
     },
     {
-      "name": "teste",
+      "name": "Cupcake",
       "description": "",
-      "price": "50,00",
-      "group": 1,
-      "groupId": "1",
+      "price": "8,99",
+      "image": "https://www.receiteria.com.br/wp-content/uploads/cupcake-730x548.jpeg",
+      "groupId": "6",
       "id": 9
     },
     {
-      "name": "teste 1",
-      "description": "",
-      "price": "40,00",
-      "groupId": "4",
-      "id": 10
+      "name": "Petit Gateau",
+      "description": "O petit gateau é um pequeno bolinho de chocolate, quentinho e, com um recheio que se esparrama pelo prato.",
+      "price": "21,80",
+      "image": "https://img.cybercook.com.br/receitas/434/petit-gateau.jpeg",
+      "groupId": "6",
+      "id": 9
     },
     {
-      "name": "nome do item",
-      "description": "qwe",
-      "price": "21",
-      "groupId": "5",
-      "id": 11
+      "name": "Hamburguer",
+      "description": "Hamburguer Artesanal",
+      "price": "19,80",
+      "image": "https://uploads.metropoles.com/wp-content/uploads/2022/05/03124339/hamburguer-8.jpg",
+      "groupId": "7",
+      "id": 10
     }
   ],
   "chart": [
-    {
-      "id": 1,
-      "name": "Pizza de Calabresa",
-      "description": "Pizza de Calabresa com queijo",
-      "price": "32,80",
-      "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
-      "groupId": 1,
-      "quantity": 1
-    },
     {
       "name": "Suco de maracuja",
       "description": "suco de caxinha 250ml",
       "price": "5,00",
       "groupId": "3",
       "id": 7,
+      "quantity": 2
+    },
+    {
+      "name": "Hamburguer",
+      "description": "Hamburguer Artesanal",
+      "price": "19,80",
+      "image": "https://uploads.metropoles.com/wp-content/uploads/2022/05/03124339/hamburguer-8.jpg",
+      "groupId": "7",
+      "id": 10,
       "quantity": 1
     }
   ],
   "orders": [
     {
-      "0": {
-        "id": 2,
-        "name": "Pizza de Frango",
-        "description": "Pizza de Frango com queijo",
-        "price": "37,40",
-        "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
-        "groupId": 1,
-        "quantity": 11
-      },
-      "1": {
-        "id": 1,
-        "name": "Pizza de Calabresa",
-        "description": "Pizza de Calabresa com queijo",
-        "price": "32,80",
-        "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
-        "groupId": 1,
-        "quantity": 2
-      },
-      "status": "pending",
+      "products": [
+        {
+          "id": 1,
+          "name": "Pizza de Calabresa",
+          "description": "Pizza de Calabresa com queijo",
+          "price": "32.80",
+          "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+          "groupId": 1,
+          "quantity": 1
+        },
+        {
+          "name": "Suco de maracuja",
+          "description": "suco de caxinha 250ml",
+          "price": "5.00",
+          "groupId": "3",
+          "id": 7,
+          "quantity": 1
+        }
+      ],
+      "name": "Sette",
+      "table": "07",
+      "total": "37,80",
+      "status": "Em andamento",
       "id": 1
     },
     {
-      "0": {
-        "id": 1,
-        "name": "Pizza de Calabresa",
-        "description": "Pizza de Calabresa com queijo",
-        "price": "32.80",
-        "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
-        "groupId": 1,
-        "quantity": 2
-      },
-      "1": {
-        "name": "Suco de maracuja",
-        "description": "suco de caxinha 250ml",
-        "price": "5.00",
-        "groupId": "3",
-        "id": 7,
-        "quantity": 1
-      },
-      "status": "pending",
+      "products": [
+        {
+          "id": 1,
+          "name": "Pizza de Calabresa",
+          "description": "Pizza de Calabresa com queijo",
+          "price": "32.80",
+          "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+          "groupId": 1,
+          "quantity": 1
+        },
+        {
+          "name": "Suco de maracuja",
+          "description": "suco de caxinha 250ml",
+          "price": "5.00",
+          "groupId": "3",
+          "id": 7,
+          "quantity": 1
+        }
+      ],
+      "name": "Sette",
+      "table": "07",
+      "total": "37,80",
+      "status": "Em andamento",
       "id": 2
     },
     {
-      "0": {
-        "id": 1,
-        "name": "Pizza de Calabresa",
-        "description": "Pizza de Calabresa com queijo",
-        "price": "32.80",
-        "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
-        "groupId": 1,
-        "quantity": 2
-      },
-      "1": {
-        "name": "Suco de maracuja",
-        "description": "suco de caxinha 250ml",
-        "price": "5.00",
-        "groupId": "3",
-        "id": 7,
-        "quantity": 2
-      },
-      "status": "pending",
+      "products": [
+        {
+          "id": 1,
+          "name": "Pizza de Calabresa",
+          "description": "Pizza de Calabresa com queijo",
+          "price": "32.80",
+          "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+          "groupId": 1,
+          "quantity": 1
+        },
+        {
+          "name": "Suco de maracuja",
+          "description": "suco de caxinha 250ml",
+          "price": "5.00",
+          "groupId": "3",
+          "id": 7,
+          "quantity": 1
+        },
+        {
+          "name": "Hamburguer",
+          "description": "Hamburguer Artesanal",
+          "price": "19.80",
+          "image": "https://uploads.metropoles.com/wp-content/uploads/2022/05/03124339/hamburguer-8.jpg",
+          "groupId": "7",
+          "id": 10,
+          "quantity": 1
+        }
+      ],
+      "name": "Iugor",
+      "table": "7",
+      "total": "57,60",
+      "status": "Em andamento",
       "id": 3
     },
     {
-      "0": {
-        "id": 1,
-        "name": "Pizza de Calabresa",
-        "description": "Pizza de Calabresa com queijo",
-        "price": "32.80",
-        "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
-        "groupId": 1,
-        "quantity": 1
-      },
-      "1": {
-        "name": "Suco de maracuja",
-        "description": "suco de caxinha 250ml",
-        "price": "5.00",
-        "groupId": "3",
-        "id": 7,
-        "quantity": 1
-      },
+      "products": [
+        {
+          "id": 1,
+          "name": "Pizza de Calabresa",
+          "description": "Pizza de Calabresa com queijo",
+          "price": "32.80",
+          "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+          "groupId": 1,
+          "quantity": 1
+        },
+        {
+          "name": "Suco de maracuja",
+          "description": "suco de caxinha 250ml",
+          "price": "5.00",
+          "groupId": "3",
+          "id": 7,
+          "quantity": 1
+        },
+        {
+          "name": "Hamburguer",
+          "description": "Hamburguer Artesanal",
+          "price": "19.80",
+          "image": "https://uploads.metropoles.com/wp-content/uploads/2022/05/03124339/hamburguer-8.jpg",
+          "groupId": "7",
+          "id": 10,
+          "quantity": 1
+        }
+      ],
       "name": "Iugor",
       "table": "7",
-      "status": "pending",
+      "total": "57,60",
+      "status": "Em andamento",
       "id": 4
     },
     {
-      "0": {
-        "id": 1,
-        "name": "Pizza de Calabresa",
-        "description": "Pizza de Calabresa com queijo",
-        "price": "32.80",
-        "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
-        "groupId": 1,
-        "quantity": 1
-      },
-      "1": {
-        "name": "Suco de maracuja",
-        "description": "suco de caxinha 250ml",
-        "price": "5.00",
-        "groupId": "3",
-        "id": 7,
-        "quantity": 1
-      },
+      "products": [
+        {
+          "id": 1,
+          "name": "Pizza de Calabresa",
+          "description": "Pizza de Calabresa com queijo",
+          "price": "32.80",
+          "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+          "groupId": 1,
+          "quantity": 1
+        },
+        {
+          "name": "Suco de maracuja",
+          "description": "suco de caxinha 250ml",
+          "price": "5.00",
+          "groupId": "3",
+          "id": 7,
+          "quantity": 1
+        },
+        {
+          "name": "Hamburguer",
+          "description": "Hamburguer Artesanal",
+          "price": "19.80",
+          "image": "https://uploads.metropoles.com/wp-content/uploads/2022/05/03124339/hamburguer-8.jpg",
+          "groupId": "7",
+          "id": 10,
+          "quantity": 1
+        }
+      ],
       "name": "Iugor",
       "table": "7",
-      "status": "pending",
+      "total": "57,60",
+      "status": "Em andamento",
       "id": 5
     },
     {
-      "0": {
-        "id": 1,
-        "name": "Pizza de Calabresa",
-        "description": "Pizza de Calabresa com queijo",
-        "price": "32.80",
-        "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
-        "groupId": 1,
-        "quantity": 1
-      },
-      "1": {
-        "name": "Suco de maracuja",
-        "description": "suco de caxinha 250ml",
-        "price": "5.00",
-        "groupId": "3",
-        "id": 7,
-        "quantity": 1
-      },
-      "name": "qwee",
-      "table": "9",
-      "status": "pending",
+      "products": [
+        {
+          "id": 1,
+          "name": "Pizza de Calabresa",
+          "description": "Pizza de Calabresa com queijo",
+          "price": "32.80",
+          "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+          "groupId": 1,
+          "quantity": 1
+        },
+        {
+          "name": "Suco de maracuja",
+          "description": "suco de caxinha 250ml",
+          "price": "5.00",
+          "groupId": "3",
+          "id": 7,
+          "quantity": 1
+        },
+        {
+          "name": "Hamburguer",
+          "description": "Hamburguer Artesanal",
+          "price": "19.80",
+          "image": "https://uploads.metropoles.com/wp-content/uploads/2022/05/03124339/hamburguer-8.jpg",
+          "groupId": "7",
+          "id": 10,
+          "quantity": 1
+        }
+      ],
+      "name": "Iugor",
+      "table": "7",
+      "total": "57,60",
+      "status": "Em andamento",
       "id": 6
     },
     {
-      "0": {
-        "id": 1,
-        "name": "Pizza de Calabresa",
-        "description": "Pizza de Calabresa com queijo",
-        "price": "32.80",
-        "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
-        "groupId": 1,
-        "quantity": 1
-      },
-      "1": {
-        "name": "Suco de maracuja",
-        "description": "suco de caxinha 250ml",
-        "price": "5.00",
-        "groupId": "3",
-        "id": 7,
-        "quantity": 1
-      },
-      "name": "Teste",
+      "products": [
+        {
+          "id": 1,
+          "name": "Pizza de Calabresa",
+          "description": "Pizza de Calabresa com queijo",
+          "price": "32.80",
+          "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+          "groupId": 1,
+          "quantity": 1
+        },
+        {
+          "name": "Suco de maracuja",
+          "description": "suco de caxinha 250ml",
+          "price": "5.00",
+          "groupId": "3",
+          "id": 7,
+          "quantity": 1
+        },
+        {
+          "name": "Hamburguer",
+          "description": "Hamburguer Artesanal",
+          "price": "19.80",
+          "image": "https://uploads.metropoles.com/wp-content/uploads/2022/05/03124339/hamburguer-8.jpg",
+          "groupId": "7",
+          "id": 10,
+          "quantity": 1
+        }
+      ],
+      "name": "Iugor",
       "table": "7",
-      "status": "pending",
+      "total": "57,60",
+      "status": "Em andamento",
       "id": 7
     },
     {
@@ -288,7 +356,7 @@
           "id": 1,
           "name": "Pizza de Calabresa",
           "description": "Pizza de Calabresa com queijo",
-          "price": "32,80",
+          "price": "32.80",
           "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
           "groupId": 1,
           "quantity": 1
@@ -296,16 +364,120 @@
         {
           "name": "Suco de maracuja",
           "description": "suco de caxinha 250ml",
-          "price": "5,00",
+          "price": "5.00",
           "groupId": "3",
           "id": 7,
           "quantity": 1
+        },
+        {
+          "name": "Hamburguer",
+          "description": "Hamburguer Artesanal",
+          "price": "19.80",
+          "image": "https://uploads.metropoles.com/wp-content/uploads/2022/05/03124339/hamburguer-8.jpg",
+          "groupId": "7",
+          "id": 10,
+          "quantity": 1
         }
       ],
-      "name": "Teste",
-      "table": "7",
-      "status": "pending",
+      "total": "57,60",
+      "status": "Em andamento",
       "id": 8
+    },
+    {
+      "products": [
+        {
+          "id": 1,
+          "name": "Pizza de Calabresa",
+          "description": "Pizza de Calabresa com queijo",
+          "price": "32.80",
+          "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+          "groupId": 1,
+          "quantity": 1
+        },
+        {
+          "name": "Suco de maracuja",
+          "description": "suco de caxinha 250ml",
+          "price": "5.00",
+          "groupId": "3",
+          "id": 7,
+          "quantity": 1
+        },
+        {
+          "name": "Hamburguer",
+          "description": "Hamburguer Artesanal",
+          "price": "19.80",
+          "image": "https://uploads.metropoles.com/wp-content/uploads/2022/05/03124339/hamburguer-8.jpg",
+          "groupId": "7",
+          "id": 10,
+          "quantity": 1
+        }
+      ],
+      "name": "asd",
+      "table": "d",
+      "total": "57,60",
+      "status": "Em andamento",
+      "id": 9
+    },
+    {
+      "products": [
+        {
+          "id": 1,
+          "name": "Pizza de Calabresa",
+          "description": "Pizza de Calabresa com queijo",
+          "price": "32.80",
+          "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-calabresa-1.jpg",
+          "groupId": 1,
+          "quantity": 1
+        },
+        {
+          "name": "Suco de maracuja",
+          "description": "suco de caxinha 250ml",
+          "price": "5.00",
+          "groupId": "3",
+          "id": 7,
+          "quantity": 1
+        },
+        {
+          "name": "Hamburguer",
+          "description": "Hamburguer Artesanal",
+          "price": "19.80",
+          "image": "https://uploads.metropoles.com/wp-content/uploads/2022/05/03124339/hamburguer-8.jpg",
+          "groupId": "7",
+          "id": 10,
+          "quantity": 1
+        }
+      ],
+      "name": "Iugor",
+      "table": "7",
+      "total": "57,60",
+      "status": "Em andamento",
+      "id": 10
+    },
+    {
+      "products": [
+        {
+          "name": "Suco de maracuja",
+          "description": "suco de caxinha 250ml",
+          "price": "5.00",
+          "groupId": "3",
+          "id": 7,
+          "quantity": 2
+        },
+        {
+          "name": "Hamburguer",
+          "description": "Hamburguer Artesanal",
+          "price": "19.80",
+          "image": "https://uploads.metropoles.com/wp-content/uploads/2022/05/03124339/hamburguer-8.jpg",
+          "groupId": "7",
+          "id": 10,
+          "quantity": 1
+        }
+      ],
+      "name": "Iugor",
+      "table": "7",
+      "total": "29,80",
+      "status": "Em andamento",
+      "id": 11
     }
   ]
 }

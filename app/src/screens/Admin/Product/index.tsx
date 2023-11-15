@@ -55,6 +55,7 @@ export function ProductAdmin({ route }: any) {
       name,
       description,
       price,
+      image,
       groupId: product.groupId ? product.groupId : group.id,
     };
 

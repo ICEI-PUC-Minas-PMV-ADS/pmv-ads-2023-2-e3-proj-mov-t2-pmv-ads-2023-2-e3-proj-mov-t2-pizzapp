@@ -18,7 +18,7 @@ export async function getOrderByName(name: string) {
 
 export async function createOrder(chart: any) {
     const url = `${enviroments.baseUrl}/orders`;
-    const order = {...chart, status: 'pending'}
+    const order = {...chart, status: 'Em andamento'}
     const response = await axios.post(url, order).then((response) => response.data);
     return response;  
 }
