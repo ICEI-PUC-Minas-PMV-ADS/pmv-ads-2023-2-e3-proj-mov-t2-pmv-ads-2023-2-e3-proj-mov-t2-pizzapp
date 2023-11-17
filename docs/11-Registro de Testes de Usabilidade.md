@@ -2,6 +2,7 @@
 ## Teste de fluxo do cliente
 
 ## Teste de Fluxo Adicionando novo produto
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp/assets/81201021/26db2ba2-fa33-42b7-9144-60e8fc6cd791
 
 ## Introdução:
 
