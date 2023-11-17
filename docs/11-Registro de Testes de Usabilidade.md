@@ -1,6 +1,10 @@
 # Registro de Testes de Usabilidade
 ## Teste de fluxo do cliente
 
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp/assets/81201021/b2940818-68cf-4dba-9e01-02e8e3db5a3e
+
+
 ## Teste de Fluxo Adicionando novo produto
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp/assets/81201021/26db2ba2-fa33-42b7-9144-60e8fc6cd791
 
