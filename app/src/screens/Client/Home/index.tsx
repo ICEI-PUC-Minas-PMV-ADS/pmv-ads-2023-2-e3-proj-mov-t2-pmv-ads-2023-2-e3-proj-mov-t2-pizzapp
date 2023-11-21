@@ -6,7 +6,7 @@ import { Header } from "@components/Header";
 import { Button } from "@components/Button";
 import { Input } from "@components/Input";
 
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { CustomerContext } from "@context/customer";
 
 export function HomeClient() {

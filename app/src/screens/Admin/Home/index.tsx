@@ -1,4 +1,3 @@
-import { Alert } from "react-native";
 import { Container, Page } from "./style";
 import { Button } from "@components/Button";
 import { Header } from "@components/Header";

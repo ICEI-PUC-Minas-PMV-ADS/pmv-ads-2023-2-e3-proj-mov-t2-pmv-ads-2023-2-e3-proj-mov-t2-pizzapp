@@ -13,7 +13,7 @@ import { StraightHeader } from "@components/StraightHeader";
 import { useNavigation } from "@react-navigation/native";
 import { IGroups, getGroup } from "@providers/groups-services";
 import { addProductToChart } from "@providers/chart-services";
-import { Alert, Image } from "react-native";
+import { Image } from "react-native";
 
 export function ProductClient({ route }: any) {
   const navigation = useNavigation();

@@ -26,7 +26,6 @@ import {
 } from "@providers/product-services";
 
 export function MenuClient() {
-  const [name, setName] = useState<string>("");
   const [groups, setGroups] = useState<IGroups[]>([]);
   const [products, setProducts] = useState<any[]>([]);
 
