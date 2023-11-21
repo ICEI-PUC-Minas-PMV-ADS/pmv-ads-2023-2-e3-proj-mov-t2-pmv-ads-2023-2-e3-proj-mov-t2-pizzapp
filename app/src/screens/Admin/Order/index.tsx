@@ -10,13 +10,10 @@ import {
   ProductText,
 } from "./style";
 import { StraightHeader } from "@components/StraightHeader";
-import { useContext, useEffect, useState } from "react";
-import { IOrder, getOrderByName, getOrders } from "@providers/order-services";
-import { CustomerContext } from "@context/customer";
-import { List } from "phosphor-react-native";
-import { FlatList, Text } from "react-native";
+import { useEffect, useState } from "react";
+import { IOrder, getOrders } from "@providers/order-services";
+import { FlatList } from "react-native";
 export function OrderAdmin() {
-  const { name } = useContext(CustomerContext);
   const [openModals, setOpenModals] = useState<string[]>([]);
 
   const [orders, setOrders] = useState<IOrder[]>([]);
@@ -33,7 +30,6 @@ export function OrderAdmin() {
 
   useEffect(() => {
     getOrders().then((response) => {
-      console.log(response);
       setOrders(response);
     });
   }, []);

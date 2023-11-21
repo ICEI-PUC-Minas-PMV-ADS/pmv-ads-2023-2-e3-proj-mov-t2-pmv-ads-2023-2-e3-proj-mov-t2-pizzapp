@@ -92,7 +92,7 @@
       "price": "21,80",
       "image": "https://img.cybercook.com.br/receitas/434/petit-gateau.jpeg",
       "groupId": "6",
-      "id": 9
+      "id": 10
     },
     {
       "name": "Hamburguer",
@@ -100,7 +100,7 @@
       "price": "19,80",
       "image": "https://uploads.metropoles.com/wp-content/uploads/2022/05/03124339/hamburguer-8.jpg",
       "groupId": "7",
-      "id": 10
+      "id": 11
     }
   ],
   "chart": [
@@ -111,7 +111,7 @@
       "image": "https://www.receiteria.com.br/wp-content/uploads/cupcake-730x548.jpeg",
       "groupId": "6",
       "id": 9,
-      "quantity": 3
+      "quantity": 1
     },
     {
       "name": "Hamburguer",
@@ -120,7 +120,7 @@
       "image": "https://uploads.metropoles.com/wp-content/uploads/2022/05/03124339/hamburguer-8.jpg",
       "groupId": "7",
       "id": 10,
-      "quantity": 2
+      "quantity": 1
     }
   ],
   "orders": [

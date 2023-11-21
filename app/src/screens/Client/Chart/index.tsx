@@ -22,16 +22,22 @@ import { Button } from "@components/Button";
 import { StraightHeader } from "@components/StraightHeader";
 import { useNavigation } from "@react-navigation/native";
 import { useContext, useEffect, useState } from "react";
-import { addProductToChart, getChart, removeOneProductFromChart, removeProductFromChart } from "@providers/chart-services";
+import {
+  addProductToChart,
+  getChart,
+  removeOneProductFromChart,
+  removeProductFromChart,
+} from "@providers/chart-services";
 import { Alert } from "react-native";
 import { IProducts } from "@providers/product-services";
 import { createOrder } from "@providers/order-services";
 import { CustomerContext } from "@context/customer";
+import { PriceComponent } from "@components/Price";
 
 export function Chart() {
   const navigation = useNavigation();
 
-  const {name, table} = useContext(CustomerContext)!;
+  const { name, table } = useContext(CustomerContext)!;
   const [chart, setChart] = useState<IProducts[]>([]);
   const [total, setTotal] = useState<string>("0,00");
   useEffect(() => {
@@ -42,7 +48,7 @@ export function Chart() {
   }, [chart]);
 
   function handleAddProduct(product: IProducts) {
-    const message =  addProductToChart(product);
+    const message = addProductToChart(product);
   }
 
   function handleRemoveProduct(product: IProducts) {
@@ -53,18 +59,27 @@ export function Chart() {
     let sum = 0;
     chart.forEach((item) => {
       item.price = item.price?.replace(",", ".");
-      sum += parseFloat(item.price)* item.quantity;
+      sum += parseFloat(item.price) * item.quantity;
     });
     setTotal(String(sum.toFixed(2).replace(".", ",")));
   }
 
+  function sumProduct({ price, quantity }: IProducts) {
+    console.log(price, quantity);
+    let sum = 0;
+    sum = (parseFloat(price?.replace(",", ".")) * quantity)
+      .toFixed(2)
+      .replace(".", ",");
+    return sum;
+  }
+
   function handleOrder() {
     createOrder({
-      products:chart, 
-      name:name, 
+      products: chart,
+      name: name,
       table: table,
-      total: total
-    })
+      total: total,
+    });
     Alert.alert(
       "Pedido Realizado",
       `Aguarde enquanto a cozinha prepara o seu pedido`,
@@ -129,7 +144,7 @@ export function Chart() {
               <QuantityView>
                 <IncrementButton
                   onPress={() => {
-                    handleAddProduct(item)
+                    handleAddProduct(item);
                   }}
                 >
                   <PlusIcon />
@@ -143,13 +158,7 @@ export function Chart() {
                   <MinusIcon />
                 </DecrementButton>
               </QuantityView>
-              <PriceText size={32} color="primary">
-                <PriceText size={20}>R$:</PriceText>
-                {item.price.split(",")[0]}
-                <PriceText size={20} color="primary">
-                  ,{item.price.split(",")[1]}
-                </PriceText>
-              </PriceText>
+              <PriceComponent total={sumProduct(item)}></PriceComponent>
             </ItemContent>
           </Item>
         )}
