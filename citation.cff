@@ -1,0 +1,27 @@
+message: O projeto em desenvolvimento é uma aplicação destinada a otimizar o ambiente de negócios de uma pizzaria. A aplicação busca proporcionar uma experiência aprimorada aos clientes, oferecendo um "garçom virtual" que permite que os clientes façam seus pedidos diretamente pelo aplicativo ao chegarem ao estabelecimento.
+title: Pizzapp - Pedido de pizza online
+authors:
+  - family-names: Guimarães Antunes
+    given-names:  Brendon
+  - family-names:  Sette Pereira
+    given-names: Iugor
+  - family-names: Victor de Oliveira Flavio
+    given-names: Bruno
+  - family-names: Souza de Oliveira
+    given-names: Daniella
+  - family-names: Lisboa Silva
+    given-names: Eryc
+  - family-names: Moreira Siqueira Junior
+    given-names: Ricardo
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Curcino de Lima
+    given-names: Mateus
+keywords:
+  - Pizza
+  - Serviços
+  - Delivery
+  - Restaurante
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e3-proj-mov-t2-pmv-ads-2023-2-e3-proj-mov-t2-pizzapp
+version: 1.0.0
+date-released: 2023-12-10
